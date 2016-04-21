@@ -9,7 +9,7 @@ Authors
 -------
 
 coAST is maintained by the [coala](https://github.com/coala-analyzer/coala)
-community.
+community. Contact us on [gitter](https://gitter.im/coala-analyzer/coala)!
 
 License
 -------
