@@ -1,0 +1,4 @@
+type: string
+start: '"'
+end: '"'
+escape: \

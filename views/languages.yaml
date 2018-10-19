@@ -1,0 +1,10 @@
+path:
+  template: /{{ language.identifier }}
+  for-each:
+    language: session.query(Language).all()
+template: Language
+context:
+  dynamic:
+    delimiter_type_comment: session.query(EnumDelimiterType).filter(EnumDelimiterType.name == 'comment').one()
+    delimiter_type_string: session.query(EnumDelimiterType).filter(EnumDelimiterType.name == 'string').one()
+    delimiter_type_block: session.query(EnumDelimiterType).filter(EnumDelimiterType.name == 'block').one()

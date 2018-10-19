@@ -1,0 +1,13 @@
+# The order of precedence will be comment, string, block
+# until there is language where that does not work.
+- pk: comment
+  name: comment
+- pk: string
+  name: string
+# 'block' type is the equivalent of 'indent' in coala definitions,
+# without the implication that a new block must be indented, as indentation
+# is typically a matter of style, and not always a property of the language.
+# 'block' currently currently implies a new 'scope', however we may need to
+# create a new delimiter type for scope, or find another way to model that.
+- pk: block
+  name: block

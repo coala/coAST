@@ -1,0 +1,11 @@
+identifier: XML
+wikidata: Q2115
+full_name: Extensible Markup Language
+extensions:
+  - xml
+delimiters:
+  - xml_comment
+  - double_quote
+  - single_quote
+  - cdata
+  - angle_braces

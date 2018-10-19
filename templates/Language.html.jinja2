@@ -1,0 +1,46 @@
+{% import 'macros.jinja2' as m %}
+<!DOCTYPE html>
+<html>
+<head><title>{{ site_title }}</title></head>
+<body>
+  <h1>{{ m.language_name(language) }}</h1>
+  <table>
+    <tr>
+      <th>Aliases</th>
+      <td>
+        {{ m.show_list(language.aliases) }}
+      </td>
+    </tr>
+    <tr>
+      <th>Extensions</th>
+      <td>
+        {{ m.show_list(language.extensions) }}
+      </td>
+    </tr>
+    <tr>
+      <th>{{ delimiter_type_comment.name }} delimiters</th>
+      <td>
+          {{ m.show_delimiter_list(language.delimiters, delimiter_type_comment) }}
+      </td>
+    </tr>
+    <tr>
+      <th>{{ delimiter_type_string.name }} delimiters</th>
+      <td>
+          {{ m.show_delimiter_list(language.delimiters, delimiter_type_string) }}
+      </td>
+    </tr>
+    <tr>
+      <th>{{ delimiter_type_block.name }} delimiters</th>
+      <td>
+          {{ m.show_delimiter_list(language.delimiters, delimiter_type_block) }}
+      </td>
+    </tr>
+    <tr>
+      <th>Keywords</th>
+      <td>
+        {{ m.show_list(language.keywords) }}
+      </td>
+    </tr>
+  <table>
+</body>
+</html>

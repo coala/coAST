@@ -1,0 +1,18 @@
+identifier: Python
+wikidata: Q28865
+versions: 2.7, 3.3, 3.4, 3.5, 3.6
+aliases:
+  - py
+extensions:
+  - py
+line_continuation: '\'
+delimiters:
+  - hash
+  - single_quote_slash_escape
+  - double_quote_slash_escape
+  - triple_single_quote
+  - triple_double_quote
+  - round_braces
+  - square_braces
+  - curly_braces
+  - colon_indent

@@ -1,0 +1,10 @@
+identifier: YAML
+wikidata: Q281876
+extensions:
+  - yml
+  - yaml
+line_continuation: '\'
+delimiters:
+  - single_quote_padded_escape
+  - double_quote_slash_escape
+  - colon_indent  # Re-using Python's delimiter.  Not nearly good enough

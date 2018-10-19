@@ -1,0 +1,16 @@
+identifier: String
+# wikidata should be Qid only
+wikidata: String
+full_name: String
+# versions is a comma separated list, as normalising it has no benefit
+# given that two languages with the same version identifier are completely
+# unrelated.
+# https://github.com/thanethomson/statik/issues/62
+versions: String
+# Aliases are almost unrelated, except two languages with the same alias
+# are a naming clash, which is useful to know.
+aliases: Alias[]
+extensions: FileExtension[]
+line_continuation: String
+delimiters: Delimiter[]
+keywords: Keyword[]

@@ -1,0 +1,8 @@
+# Also see notes in data/EnumDelimiterType/_all.yml
+type: EnumDelimiterType  # comment or string or block
+start: String
+end: String  # implicitly end of line.
+escape: String
+length: Integer  # Length after escapes are processed
+indent: Boolean
+nested: Boolean

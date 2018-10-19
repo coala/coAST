@@ -1,0 +1,5 @@
+project-name: coala language metadata
+base-path: /
+context:
+  static:
+    site-title: coala language metadata site

@@ -1,0 +1,7 @@
+path: /
+template: home
+context:
+  static:
+    page-title: Welcome
+  dynamic:
+    languages: session.query(Language).all()

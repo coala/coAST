@@ -1,0 +1,13 @@
+{% import 'macros.jinja2' as m %}
+<!DOCTYPE html>
+<html>
+<head><title>{{ site_title }}</title></head>
+<body>
+  <h1>{{ page_title }}</h1>
+  <ul>
+  {% for language in languages %}
+    <li><a href="{% url 'languages', language %}">{{ m.language_name(language) }}</a>
+  {% endfor %}
+  </ul>
+</body>
+</html>

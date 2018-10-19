@@ -1,0 +1,29 @@
+{% macro language_name(language) %}
+{% if language.full_name %}
+{{ language.full_name }}
+{% else %}
+{{ language.identifier }}
+{% endif %}
+{% endmacro %}
+
+{% macro show_list(list, separator=',') %}
+  {% for item in list %}
+    {{ item.pk | escape }}{% if not loop.last %}{{separator}} {% endif %}
+  {% endfor %}
+{% endmacro %}
+
+{% macro show_delimiter_list(delimiters, type) %}
+  <ul>
+  {% for item in delimiters %}
+    {% if item.type == type %}
+    <li><tt>{{ item.start | escape }}</tt> -
+      {% if item.end %}
+        <tt>{{ item.end | escape }}</tt>
+      {% else %}
+        (EOL)
+      {% endif %}
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+{% endmacro %}
