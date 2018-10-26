@@ -1,0 +1,82 @@
+identifier: PHP
+full_name: PHP
+wikidata: Q59
+aliases:
+  - PHP
+extensions:
+  - php
+line_continuation: '\'
+delimiters:
+  # comment delimiters
+  - double_slash
+  - multiline_slash_star
+  # string delimiters:
+  - php_short_open_tag
+  - c_char
+  - double_quote_slash_escape
+keywords:
+  - '__halt_compiler'
+  - abstract
+  - and
+  - array
+  - as
+  - break
+  - callable
+  - case
+  - catch
+  - class
+  - clone
+  - const
+  - continue
+  - declare
+  - default
+  - die
+  - do
+  - echo
+  - else
+  - elseif
+  - empty
+  - enddeclare
+  - endfor
+  - endforeach
+  - endif
+  - endswitch
+  - endwhile
+  - eval
+  - exit
+  - extends
+  - final
+  - for
+  - foreach
+  - function
+  - global
+  - goto
+  - if
+  - implements
+  - include
+  - include_once
+  - instanceof
+  - insteadof
+  - interface
+  - isset
+  - list
+  - namespace
+  - new
+  - private
+  - or
+  - print
+  - protected
+  - public
+  - require
+  - require_once
+  - switch
+  - return
+  - static
+  - throw
+  - trait
+  - try
+  - unset
+  - use
+  - xor
+  - var
+  - while
