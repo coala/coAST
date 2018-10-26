@@ -1,0 +1,27 @@
+identifier: TinyBasic
+full_name: TinyBasic
+wikidata: Q586622
+aliases:
+  - TB
+extensions:
+  - tb
+delimiters:
+  - rem
+  - single_quote
+  - double_quote
+keywords:
+  - PRINT
+  - IF
+  - THEN
+  - GOTO
+  - INPUT
+  - LET
+  - GOSUB
+  - RETURN
+  - CLEAR
+  - LIST
+  - RUN
+  - END
+  - PR
+  - RND
+  - USR
