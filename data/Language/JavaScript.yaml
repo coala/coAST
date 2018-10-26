@@ -1,0 +1,18 @@
+identifier: JavaScript
+wikidata: Q2005
+aliases:
+  - js
+  - ecmascript
+  - node
+extensions:
+  - .js
+line_continuation: '\'
+delimiters:
+  - double_slash
+  - multiline_slash_star
+  - single_quote_slash_escape
+  - double_quote_slash_escape
+  - curly_braces
+  - round_braces
+  - square_braces
+  - backticks
