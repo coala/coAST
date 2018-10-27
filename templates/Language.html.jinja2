@@ -1,10 +1,15 @@
 {% import 'macros.jinja2' as m %}
 <!DOCTYPE html>
 <html>
-<head><title>{{ site_title }}</title></head>
+<head>
+  <title>{{ site_title }}</title>
+  <link rel="stylesheet" href="../assets/css/coala.css" type="text/css" />
+</head>
 <body>
-  <h1>{{ m.language_name(language) }}</h1>
-  <table>
+  <section class="thin-row-small">
+    <h1>{{ m.language_name(language) }}</h1>
+  </section>
+  <table border="1" cellpadding="10">
     <tr>
       <th>Aliases</th>
       <td>
