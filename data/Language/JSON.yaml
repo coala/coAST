@@ -1,0 +1,13 @@
+identifier: JSON
+wikidata: Q2063
+full_name: JavaScript Object Notation
+extensions: 
+  - json
+aliases:
+  - json
+delimiters:
+  # String delimiter:
+  - double_quote_slash_escape
+  # Block delimiter:
+  - curly_braces
+  - square_braces
