@@ -1,0 +1,43 @@
+identifier: Go
+wikidata: Q37227
+aliases:
+  - golang
+extensions:
+  - go
+line_continuation: '.'
+delimiters:
+  # comment delimiters
+  - double_slash
+  - multiline_slash_star
+  # string delimiters:
+  - double_quote_slash_escape
+  - curly_braces
+  - round_braces
+  - square_braces
+  - backticks
+keywords:
+  - break
+  - case
+  - chan
+  - const
+  - continue
+  - default
+  - defer
+  - else
+  - fallthrough
+  - for
+  - if
+  - func
+  - go
+  - goto
+  - import
+  - interface
+  - map
+  - package
+  - range
+  - return
+  - select
+  - struct
+  - switch
+  - type
+  - var
