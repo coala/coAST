@@ -1,0 +1,14 @@
+identifier: Java
+# wikidata should be Qid only
+wikidata: Q251
+full_name: Java
+aliases:
+  - java
+extensions: 
+  - java
+delimiters:
+  # comment delimters:
+  - double_slash
+  - multiline_slash_star
+  # string delimiters:
+  - double_quote_slash_escape 
