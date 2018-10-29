@@ -15,3 +15,17 @@ a:hover{
   color: #00de87;
   text-decoration: underline;
 }
+
+table{
+  border: 1px solid #00de87;
+  border-collapse: collapse;
+  margin: auto;
+  width: 80%;
+}
+
+tr:nth-child(odd){
+  background-color: #57ffbd;
+}
+tr:nth-child(even){
+  background-color: #96ffd6;
+}
