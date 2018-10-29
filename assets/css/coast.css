@@ -1,0 +1,17 @@
+html{
+  font-family: Roboto;
+}
+#languages-list{
+  list-style: none;
+  padding-left: 0;
+}
+
+a{
+  color: #00945a;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #00de87;
+  text-decoration: underline;
+}
