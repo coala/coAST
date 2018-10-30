@@ -4,12 +4,13 @@
 <head>
   <title>{{ site_title }}</title>
   <link rel="stylesheet" href="assets/css/coala.css" type="text/css" />
+  <link rel="stylesheet" href="assets/css/coast.css" type="text/css" />
 </head>
 <body>
   <section class="thin-row-small">
     <h1>{{ page_title }}</h1>
   </section>
-  <ul class="thin-row-medium">
+  <ul class="thin-row-medium" id="languages-list">
   {% for language in languages %}
     <li><a href="{% url 'languages', language %}">{{ m.language_name(language) }}</a>
   {% endfor %}
