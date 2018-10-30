@@ -41,3 +41,27 @@ keywords:
   - switch
   - type
   - var
+datatypes:
+  - chan
+  - func
+  - interface
+  - map
+  - struct
+  - uint8_go
+  - uint16_go
+  - uint32_go
+  - uint64_go
+  - int8_go
+  - int16_go
+  - int32_go
+  - int64_go
+  - float32
+  - float64
+  - complex64
+  - complex128
+  - byte
+  - rune
+  - string
+  - array
+  - bool
+  - slice
