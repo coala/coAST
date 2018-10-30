@@ -15,8 +15,9 @@ delimiters:
   - round_braces
   - square_braces
   - curly_braces
-  - colon_indent  - and
+  - colon_indent
 keywords:
+  - and
   - as
   - assert
   - break
