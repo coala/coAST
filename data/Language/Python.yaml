@@ -15,4 +15,48 @@ delimiters:
   - round_braces
   - square_braces
   - curly_braces
+<<<<<<< HEAD
+<<<<<<< HEAD
   - colon_indent
+keywords:
+  - and
+=======
+  - colon_indent  - and
+keywords:
+>>>>>>> b3b0127... Add keywords to Java.yaml and Python.yaml
+=======
+  - colon_indent
+keywords:
+  - and
+>>>>>>> 49a69a0... reconfig Python.yaml keywords
+  - as
+  - assert
+  - break
+  - class
+  - continue
+  - def
+  - del
+  - elif
+  - else
+  - except
+  - False
+  - finally
+  - for
+  - from
+  - global
+  - if
+  - import
+  - in
+  - is
+  - lambda
+  - nonlocal
+  - not
+  - or
+  - pass
+  - raise
+  - return
+  - True
+  - try
+  - while
+  - with
+  - yield
