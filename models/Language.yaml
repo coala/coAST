@@ -13,4 +13,5 @@ aliases: Alias[]
 extensions: FileExtension[]
 line_continuation: String
 delimiters: Delimiter[]
+datatypes: DataType[]
 keywords: Keyword[]
