@@ -28,7 +28,7 @@ keywords:
   - else
   - enum
   - extends
-  - false
+  - 'false'
   - final
   - finally
   - float
@@ -56,7 +56,7 @@ keywords:
   - this
   - throws
   - transient
-  - true
+  - 'true'
   - try
   - void
   - volatile

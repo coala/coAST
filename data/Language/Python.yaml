@@ -39,7 +39,7 @@ keywords:
   - elif
   - else
   - except
-  - False
+  - 'False'
   - finally
   - for
   - from
@@ -55,7 +55,7 @@ keywords:
   - pass
   - raise
   - return
-  - True
+  - 'True'
   - try
   - while
   - with
