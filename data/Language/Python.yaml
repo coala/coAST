@@ -20,6 +20,7 @@ delimiters:
   - colon_indent
 keywords:
   - and
+<<<<<<< HEAD
 =======
   - colon_indent  - and
 keywords:
@@ -29,6 +30,8 @@ keywords:
 keywords:
   - and
 >>>>>>> 49a69a0... reconfig Python.yaml keywords
+=======
+>>>>>>> 5a021b1c60e621cfa07083623e47d5c3b4a065cd
   - as
   - assert
   - break
@@ -39,7 +42,11 @@ keywords:
   - elif
   - else
   - except
+<<<<<<< HEAD
   - 'False'
+=======
+  - False
+>>>>>>> 5a021b1c60e621cfa07083623e47d5c3b4a065cd
   - finally
   - for
   - from
@@ -55,7 +62,11 @@ keywords:
   - pass
   - raise
   - return
+<<<<<<< HEAD
   - 'True'
+=======
+  - True
+>>>>>>> 5a021b1c60e621cfa07083623e47d5c3b4a065cd
   - try
   - while
   - with

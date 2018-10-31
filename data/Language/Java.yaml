@@ -28,7 +28,11 @@ keywords:
   - else
   - enum
   - extends
+<<<<<<< HEAD
   - 'false'
+=======
+  - false
+>>>>>>> 5a021b1c60e621cfa07083623e47d5c3b4a065cd
   - final
   - finally
   - float
@@ -56,7 +60,11 @@ keywords:
   - this
   - throws
   - transient
+<<<<<<< HEAD
   - 'true'
+=======
+  - true
+>>>>>>> 5a021b1c60e621cfa07083623e47d5c3b4a065cd
   - try
   - void
   - volatile
