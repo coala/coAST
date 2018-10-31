@@ -1,0 +1,44 @@
+identifier: Jinja2
+full_name: Jinja2
+wikidata: Q4041851
+extensions:
+  - jj2
+  - j2
+  - jinja
+  - jinja2
+datatypes:
+  - bool_title_case
+delimiters:
+  # comment delimiter
+  - multiline_curly_braces_hash
+  # block delimiter
+  - curly_braces_curly_braces
+  - curly_braces_percent
+keywords:
+  - as
+  - block
+  - call
+  - else
+  - endblock
+  - endcall
+  - endfilter
+  - endfor
+  - endif
+  - endmacro
+  - endraw
+  - endset
+  - endwith
+  - extends
+  - filter
+  - for
+  - from
+  - if
+  - import
+  - in
+  - include
+  - macro
+  - not
+  - raw
+  - scoped
+  - set
+  - with

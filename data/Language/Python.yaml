@@ -31,7 +31,6 @@ keywords:
   - elif
   - else
   - except
-  - 'False'
   - finally
   - for
   - from
@@ -47,13 +46,12 @@ keywords:
   - pass
   - raise
   - return
-  - 'True'
   - try
   - while
   - with
   - yield
 datatypes:
-  - bool_python
+  - bool_title_case
   - int_python
   - str_python
   - float_python
