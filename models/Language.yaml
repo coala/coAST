@@ -10,6 +10,7 @@ full_name: String
 versions: String
 # Aliases are almost unrelated, except two languages with the same alias
 # are a naming clash, which is useful to know.
+grammar_file: String
 aliases: Alias[]
 extensions: FileExtension[]
 line_continuation: String
