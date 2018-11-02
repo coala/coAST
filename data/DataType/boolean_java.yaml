@@ -1,0 +1,7 @@
+keyword: boolean
+integer-min: '0'
+integer-max: '1'
+integer-signed: false
+literals:
+  - 'true'
+  - 'false'

@@ -13,6 +13,15 @@ delimiters:
   - multiline_slash_star
   # string delimiters:
   - double_quote_slash_escape 
+datatypes:
+  - boolean_java
+  - byte_java
+  - char_java
+  - int_java
+  - long_java
+  - short_java
+  - float_java
+  - double_java
 keywords:
   - abstract
   - assert

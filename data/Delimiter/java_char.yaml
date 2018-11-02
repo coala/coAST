@@ -1,0 +1,5 @@
+type: string
+start: "'"
+end: "'"
+escape: \
+length: 1
