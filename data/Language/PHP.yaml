@@ -2,6 +2,7 @@ identifier: PHP
 full_name: PHP
 creation_date: 1995
 wikidata: Q59
+grammar_file: https://github.com/antlr/grammars-v4/tree/master/php/PhpParser.g4
 aliases:
   - PHP
 extensions:

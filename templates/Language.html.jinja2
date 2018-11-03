@@ -12,6 +12,14 @@
   </section>
   <table>
     <tr>
+      <th>Grammar File</th>
+      <td>
+        <a href = {{language.grammar_file}}>
+          {{ m.show_grammar(language.grammar_file) }}
+        </a>  
+      </td>
+    </tr>    
+    <tr>
       <th>Aliases</th>
       <td>
         {{ m.show_list(language.aliases) }}
@@ -39,6 +47,12 @@
       <th>{{ delimiter_type_block.name }} delimiters</th>
       <td>
           {{ m.show_delimiter_list(language.delimiters, delimiter_type_block) }}
+      </td>
+    </tr>
+    <tr>
+      <th>Datatypes</th>
+      <td>
+        {{ m.show_list(language.datatypes) }}
       </td>
     </tr>
     <tr>

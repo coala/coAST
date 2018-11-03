@@ -1,6 +1,7 @@
 identifier: TinyBasic
 full_name: TinyBasic
 wikidata: Q586622
+grammar_file: https://github.com/antlr/grammars-v4/tree/master/tinybasic/tinybasic.g4
 aliases:
   - TB
 extensions:

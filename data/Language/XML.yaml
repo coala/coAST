@@ -1,6 +1,7 @@
 identifier: XML
 wikidata: Q2115
 full_name: Extensible Markup Language
+grammar_file: https://github.com/antlr/grammars-v4/tree/master/xml/XMLParser.g4
 extensions:
   - xml
 delimiters:

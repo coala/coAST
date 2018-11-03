@@ -1,6 +1,7 @@
 identifier: CPlusPlus
 full_name: C++
 wikidata: Q2407
+grammar_file: https://github.com/antlr/grammars-v4/tree/master/cpp/CPP14.g4
 aliases:
   - C Plus Plus
   - CPP
