@@ -1,0 +1,76 @@
+identifier: Rust
+full_name: Rust
+wikidata: Q575650
+aliases:
+  - Rust
+  - rs
+extensions:
+  - rs
+  - rlib
+line_continuation: '\'
+delimiters:
+  # comment delimiters
+  - double_slash
+  - triple_slash
+  - doc_comment
+  - multiline_slash_star
+  # string delimiters:
+  - c_char
+  - double_quote_slash_escape
+  - curly_braces
+datatypes:
+  - boolean_rust
+keywords:
+  - Self
+  - abstract
+  - alignof
+  - as
+  - become
+  - box
+  - break
+  - const
+  - continue
+  - crate
+  - do
+  - else
+  - enum
+  - extern
+  - extern crate
+  - final
+  - fn
+  - for
+  - if
+  - if let
+  - impl
+  - in
+  - let
+  - loop
+  - macro
+  - match
+  - mod
+  - move
+  - mut
+  - offsetof
+  - override
+  - priv
+  - proc
+  - pub
+  - pure
+  - ref
+  - return
+  - self
+  - sizeof
+  - static
+  - struct
+  - super
+  - trait
+  - type
+  - typeof
+  - unsafe
+  - unsized
+  - use
+  - use
+  - virtual
+  - where
+  - while
+  - yield
