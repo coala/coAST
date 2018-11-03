@@ -1,0 +1,98 @@
+identifier: CSharp
+full_name: C#
+wikidata: Q2370
+grammar_file: https://github.com/antlr/grammars-v4/tree/master/csharp/CSharpParser.g4
+aliases:
+  - C Sharp
+  - CS
+  - CSharp
+extensions:
+  - cs
+line_continuation: '\'
+delimiters:
+  # comment delimiters
+  - triple_slash
+  - multiline_double_slash_star
+  # string delimiters:
+  - double_quote_slash_escape
+  - verbatim
+  - curly_braces
+keywords:
+- abstract
+- as
+- base
+- bool	
+- break
+- byte
+- case
+- catch	
+- char
+- checked
+- class
+- const	
+- continue
+- decimal
+- default
+- delegate	
+- do
+- double
+- else
+- enum	
+- event
+- explicit
+- extern
+- false	
+- finally
+- fixed
+- float
+- for	
+- foreach
+- goto
+- if
+- implicit	
+- in
+- int
+- interface
+- internal	
+- is
+- lock
+- long
+- namespace	
+- new
+- null
+- object
+- operator
+- out
+- override
+- params
+- private	
+- protected
+- public
+- readonly
+- ref	
+- return
+- sbyte
+- sealed
+- short	
+- sizeof
+- stackalloc
+- static
+- string	
+- struct
+- switch
+- this
+- throw	
+- true
+- try
+- typeof
+- uint	
+- ulong
+- unchecked
+- unsafe
+- ushort
+- using
+- using static
+- virtual
+- void	
+- volatile
+- while
