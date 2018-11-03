@@ -1,0 +1,83 @@
+identifier: Swift
+creation_date: 20140602
+wikidata: Q17118377
+versions: 1.0, 1.1, 1.2, 2.0, 3.0, 4.0, 4.1, 4.2
+aliases:
+  - swift
+extensions:
+  - swift
+line_continuation: '\'
+delimiters:
+  - double_slash
+  - multiline_slash_star
+  - double_quote_slash_escape
+  - round_braces
+  - square_braces
+  - curly_braces
+keywords:
+  - class
+  - case
+  - catch
+  - break
+  - associativity
+  - continue
+  - convenience
+  - default
+  - deinit
+  - didSet
+  - do
+  - else
+  - if
+  - enum
+  - extension
+  - fallthrough
+  - final
+  - for
+  - func
+  - get
+  - guard
+  - in
+  - infix
+  - init
+  - inout
+  - internal
+  - lazy
+  - let
+  - mutating
+  - nil
+  - operator
+  - override
+  - postfix
+  - precedence
+  - prefix
+  - private
+  - public
+  - repeat
+  - required
+  - return
+  - self
+  - set
+  - static
+  - struct
+  - subscript
+  - super
+  - switch
+  - throws
+  - try
+  - var
+  - weak
+  - where
+  - while
+  - willSet
+  - fileprivate
+  - import
+  - open
+  - protocol
+  - typealias
+  - defer
+  - as
+  - Any
+  - is
+  - rethrows
+  - throw
+  - _
