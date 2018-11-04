@@ -1,0 +1,79 @@
+identifier: Pascal
+creation_date: 1970
+wikidata: Q81571
+grammar_file: https://github.com/antlr/grammars-v4/blob/master/pascal/pascal.g4
+aliases:
+  - Pascal
+extensions:
+  - pas
+  - pp
+  - pascal
+  - p
+  - pl
+  - inc
+delimiters:
+  # comment delimiters
+  - double_slash
+  - curly_braces
+  # block delimiters:
+  - single_quote_slash_escape
+  - round_braces
+  - square_braces
+keywords:
+  - and
+  - array
+  - asm
+  - begin
+  - break
+  - case
+  - const
+  - constructor
+  - continue
+  - destructor
+  - div
+  - do
+  - downto
+  - else
+  - end
+  - file
+  - for
+  - function
+  - goto
+  - if
+  - implementation
+  - in
+  - inline
+  - interface
+  - label
+  - mod
+  - nil
+  - not
+  - object
+  - of
+  - on
+  - operator
+  - or
+  - packed
+  - procedure
+  - program
+  - record
+  - repeat
+  - set
+  - shl
+  - shr
+  - then
+  - to
+  - type
+  - unit
+  - until
+  - uses
+  - var
+  - while
+  - with
+  - xor
+datatypes:
+  - string
+  - boolean
+  - integer
+  - real
+  - char
