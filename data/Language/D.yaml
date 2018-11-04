@@ -1,0 +1,126 @@
+identifier: D
+# wikidata should be Qid only
+wikidata: Q319268
+full_name: D
+aliases:
+  - D
+extensions:
+  - d
+delimiters:
+  # comment delimters:
+  - double_slash
+  - multiline_slash_star
+  # string delimiters:
+  - double_quote_slash_escape
+datatypes:
+  - boolean_d
+  - byte_d
+  - char_d
+  - const_d
+  - cdouble_d
+  - cfloat_d
+  - dchar_d
+  - double_d
+  - float_d
+  - idouble_d
+  - ifloat_d
+  - int_d
+  - long_d
+  - real_d
+  - short_d
+  - ubyte_d
+  - ucent_d
+  - uint_d
+  - ulong_d
+  - ushort_d
+  - wchar_d
+keywords:
+  - abstract
+  - alias
+  - align
+  - asm
+  - assert
+  - auto
+  - body
+  - break
+  - case
+  - cast
+  - catch
+  - cent
+  - class
+  - const
+  - continue
+  - creal
+  - debug
+  - default
+  - delegate
+  - delete
+  - deprecated
+  - do
+  - else
+  - enum
+  - export
+  - extern
+  - final
+  - finally
+  - for
+  - foreach
+  - foreach_reverse
+  - function
+  - goto
+  - if
+  - immutable
+  - import
+  - in
+  - inout
+  - interface
+  - invariant
+  - ireal
+  - is
+  - lazy
+  - macro
+  - mixin
+  - module
+  - new
+  - nothrow
+  - 'null'
+  - out
+  - override
+  - package
+  - pragma
+  - private
+  - protected
+  - public
+  - pure
+  - ref
+  - return
+  - scope
+  - shared
+  - static
+  - struct
+  - super
+  - switch
+  - synchronized
+  - template
+  - this
+  - throw
+  - try
+  - typedef
+  - typeid
+  - typeof
+  - union
+  - unittest
+  - version
+  - void
+  - while
+  - with
+  - __FILE__
+  - __FILE_FULL_PATH__
+  - __MODULE__
+  - __LINE__
+  - __FUNCTION__
+  - __PRETTY_FUNCTION__
+  - __gshared
+  - __traits
+  - __vector
+  - __parameters
