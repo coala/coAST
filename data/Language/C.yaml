@@ -1,0 +1,62 @@
+identifier: C
+full_name: C
+wikidata: Q15777
+grammar_file: https://github.com/antlr/grammars-v4/blob/master/c/C.g4
+aliases:
+  - c
+extensions:
+  - c
+  - h
+line_continuation: '\'
+delimiters:
+  # comment delimiters
+  - double_slash
+  - multiline_slash_star
+  # string delimiters
+  - c_char
+  - double_quote_slash_escape
+  - curly_braces
+keywords:
+  - auto
+  - break
+  - case
+  - char
+  - const
+  - continue
+  - default
+  - do
+  - double
+  - else
+  - enum
+  - extern
+  - float
+  - for
+  - goto
+  - if
+  - int
+  - long
+  - register
+  - return
+  - short
+  - signed
+  - sizeof
+  - static
+  - struct
+  - switch
+  - typedef
+  - union
+  - unsigned
+  - void
+  - volatile
+  - while
+  - '#include'
+  - '#define'
+  - '#undef'
+  - '#ifdef'
+  - '#ifndef'
+  - '#if'
+  - '#endif'
+  - '#else'
+  - '#elif'
+  - '#line'
+  - '#pragma'
