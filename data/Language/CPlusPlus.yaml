@@ -119,3 +119,12 @@ keywords:
   - '#elif'
   - '#line'
   - '#pragma'
+datatypes:
+  - bool_cpp
+  - int_cpp
+  - long_cpp
+  - short_cpp
+  - float_cpp
+  - double_cpp
+  - char_cpp
+  - void_cpp

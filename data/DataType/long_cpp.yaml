@@ -1,0 +1,4 @@
+keyword: long
+integer-min: '-2,147,483,648'
+integer-max: '2,147,483,647'
+integer-signed: true

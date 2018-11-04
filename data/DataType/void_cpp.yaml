@@ -1,0 +1,4 @@
+keyword: void
+integer-min: '0'
+integer-max: '0'
+integer-signed: false
