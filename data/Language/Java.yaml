@@ -5,14 +5,14 @@ full_name: Java
 grammar_file: https://github.com/antlr/grammars-v4/blob/master/java8/Java8.g4
 aliases:
   - java
-extensions: 
+extensions:
   - java
 delimiters:
   # comment delimters:
   - double_slash
   - multiline_slash_star
   # string delimiters:
-  - double_quote_slash_escape 
+  - double_quote_slash_escape
 datatypes:
   - boolean_java
   - byte_java

@@ -13,7 +13,7 @@
   <ul class="thin-row-medium" id="languages-list">
   {% for language in languages %}
     <li><a href="{% url 'languages', language %}">{{ m.language_name(language) }}</a>
-  {% endfor %}
+  {% endfor %}{# for language in languages #}
   </ul>
 </body>
 </html>

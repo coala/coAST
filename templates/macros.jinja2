@@ -3,17 +3,17 @@
 {{ language.full_name }}
 {% else %}
 {{ language.identifier }}
-{% endif %}
+{% endif %}{# if language.full_name #}
 {% endmacro %}
 
 {% macro show_grammar(grammar_file) %}
-  {{grammar_file}}
+  {{ grammar_file }}
 {% endmacro %}
 
 {% macro show_list(list, separator=',') %}
   {% for item in list %}
-    {{ item.pk | escape }}{% if not loop.last %}{{separator}} {% endif %}
-  {% endfor %}
+    {{ item.pk | escape }}{% if not loop.last %}{{ separator }} {% endif %}
+  {% endfor %}{# for item in list #}
 {% endmacro %}
 
 {% macro show_delimiter_list(delimiters, type) %}
@@ -25,9 +25,9 @@
         <tt>{{ item.end | escape }}</tt>
       {% else %}
         (EOL)
-      {% endif %}
+      {% endif %}{# if item.end #}
     </li>
-    {% endif %}
-  {% endfor %}
+    {% endif %}{# if item.type == type #}
+  {% endfor %}{# for item in delimiters #}
 </ul>
 {% endmacro %}

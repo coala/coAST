@@ -1,7 +1,8 @@
 identifier: Python
 wikidata: Q28865
 versions: 2.7, 3.3, 3.4, 3.5, 3.6
-grammar_file: https://github.com/antlr/grammars-v4/tree/master/python3/Python3.g4
+grammar_file: https://github.com/antlr/grammars-v4/tree/master/python3/
+              Python3.g4
 aliases:
   - py
 extensions:

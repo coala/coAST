@@ -1,0 +1,7 @@
+[jinja2]
+bears = Jinja2Bear
+files = **.jinja2
+
+[yaml]
+bears = YAMLLintBear
+files = *.yml, **.yaml

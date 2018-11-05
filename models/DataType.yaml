@@ -3,5 +3,5 @@ keyword: String  # Keyword that identifies the type i.e. int, str
 integer-min: String  # String representing minium integer or uncertain
 integer-max: String  # String represetinng maximum integer or uncertain
 integer-signed: Boolean  # Whether the datatype is signed integer or not
-delimiters: Delimiter[] # If the datatype has any delimiters
-literals: Keyword[] # List of literals for a datatype
+delimiters: Delimiter[]  # If the datatype has any delimiters
+literals: Keyword[]  # List of literals for a datatype
