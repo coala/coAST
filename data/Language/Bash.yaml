@@ -2,5 +2,33 @@ identifier: Bash
 wikidata: Q189248
 extensions:
   - sh
+aliases:
+  - bash
 line_continuation:
   - backslash
+delimiters:
+  # comment delimiters:
+  - hash
+  - bash_multiline_comment
+  # string delimiters:
+  - c_char
+  - backticks
+  - double_quote_slash_escape
+  - bash_single_quote_escape
+keywords:
+  - if
+  - then
+  - else
+  - elif
+  - fi
+  - case
+  - esac
+  - for
+  - select
+  - while
+  - until
+  - do
+  - done
+  - in
+  - function
+  - time
