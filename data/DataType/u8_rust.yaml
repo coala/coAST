@@ -1,0 +1,4 @@
+keyword: uint8
+integer-min: '0'
+integer-max: '255'
+integer-signed: false

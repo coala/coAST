@@ -1,0 +1,4 @@
+keyword: uint64
+integer-min: '0'
+integer-max: '18446744073709551615'
+integer-signed: false
