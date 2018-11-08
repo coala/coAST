@@ -1,0 +1,4 @@
+keyword: long long
+integer-min: '-2E63'
+integer-max: '2E63 - 1'
+integer-signed: true

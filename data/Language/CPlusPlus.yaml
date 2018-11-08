@@ -121,10 +121,16 @@ keywords:
   - '#pragma'
 datatypes:
   - bool_cpp
-  - int_cpp
-  - long_cpp
-  - short_cpp
-  - float_cpp
-  - double_cpp
-  - char_cpp
   - void_cpp
+  - short_c
+  - ushort_c
+  - uint_c
+  - int_c
+  - long_c
+  - ulong_c
+  - llong_c
+  - ullong_c
+  - char_c
+  - uchar_c
+  - float_c
+  - double_c

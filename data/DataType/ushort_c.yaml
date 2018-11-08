@@ -1,0 +1,4 @@
+keyword: unsigned short
+integer-min: '0'
+integer-max: '65535'
+integer-signed: false

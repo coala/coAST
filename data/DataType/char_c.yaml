@@ -1,0 +1,6 @@
+keyword: char
+integer-min: '-128'
+integer-max: '127'
+integer-signed: true
+delimiters:
+  - c_char

@@ -4,6 +4,9 @@ wikidata: Q15777
 grammar_file: https://github.com/antlr/grammars-v4/blob/master/c/C.g4
 aliases:
   - c
+  - ANSI C
+  - ISO C
+  - Standard C
 extensions:
   - c
   - h
@@ -15,6 +18,7 @@ delimiters:
   # string delimiters
   - c_char
   - double_quote_slash_escape
+  # block delimiters
   - curly_braces
 keywords:
   - auto
@@ -60,3 +64,16 @@ keywords:
   - '#elif'
   - '#line'
   - '#pragma'
+datatypes:
+  - short_c
+  - ushort_c
+  - uint_c
+  - int_c
+  - long_c
+  - ulong_c
+  - llong_c
+  - ullong_c
+  - char_c
+  - uchar_c
+  - float_c
+  - double_c
