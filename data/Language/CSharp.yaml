@@ -97,3 +97,16 @@ keywords:
   - void
   - volatile
   - while
+datatypes:
+  - bool_cs
+  - byte_cs
+  - decimal_cs
+  - double_c
+  - float_c
+  - int_c
+  - long_cs
+  - sbyte_cs
+  - short_c
+  - uint_cs
+  - ulong_cs
+  - ushort_cs

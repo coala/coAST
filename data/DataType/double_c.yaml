@@ -1,0 +1,5 @@
+keyword: double
+integer-min: '-1.7E+308'
+integer-max: '1.7E+308'
+integer-signed: true
+precision: 15

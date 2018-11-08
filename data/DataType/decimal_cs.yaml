@@ -1,0 +1,5 @@
+keyword: decimal
+integer-min: '-7.9E-28'
+integer-max: '7.9E+308'
+integer-signed: true
+precision: '28'

@@ -1,0 +1,4 @@
+keyword: bool
+literals:
+  - 'true'
+  - 'false'
