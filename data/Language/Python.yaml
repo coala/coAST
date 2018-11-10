@@ -51,3 +51,9 @@ keywords:
   - while
   - with
   - yield
+datatypes:
+  - bool_python
+  - int_python
+  - str_python
+  - float_python
+  - none_python

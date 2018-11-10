@@ -1,0 +1,6 @@
+keyword: str
+delimiters:
+  - single_quote.yaml
+  - double_quote.yaml
+  - triple_single_quote.yaml
+  - triple_double_quote.yaml

@@ -1,0 +1,4 @@
+keyword: int
+integer-min: 'uncertain'
+integer-max: 'uncertain'
+integer-signed: true
