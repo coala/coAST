@@ -3,7 +3,8 @@ wikidata: Q281876
 extensions:
   - yml
   - yaml
-line_continuation: '\'
+line_continuation:
+  - backslash
 delimiters:
   - single_quote_padded_escape
   - double_quote_slash_escape

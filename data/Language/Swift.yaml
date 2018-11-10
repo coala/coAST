@@ -6,7 +6,8 @@ aliases:
   - swift
 extensions:
   - swift
-line_continuation: '\'
+line_continuation:
+  - backslash
 delimiters:
   - double_slash
   - multiline_slash_star

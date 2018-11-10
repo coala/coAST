@@ -10,7 +10,8 @@ aliases:
 extensions:
   - c
   - h
-line_continuation: '\'
+line_continuation:
+  - backslash
 delimiters:
   # comment delimiters
   - double_slash

@@ -8,7 +8,8 @@ aliases:
 extensions:
   - vb
   - bas
-line_continuation: '_'
+line_continuation:
+  - underscore
 delimiters:
   # comment delimiters
   - single_quote_comment

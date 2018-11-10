@@ -9,7 +9,8 @@ aliases:
   - CSharp
 extensions:
   - cs
-line_continuation: '\'
+line_continuation:
+  - backslash
 delimiters:
   # comment delimiters
   - triple_slash

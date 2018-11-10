@@ -2,4 +2,5 @@ identifier: Bash
 wikidata: Q189248
 extensions:
   - sh
-line_continuation: '\'
+line_continuation:
+  - backslash

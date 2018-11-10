@@ -5,7 +5,8 @@ aliases:
   - golang
 extensions:
   - go
-line_continuation: '.'
+line_continuation:
+  - dot
 delimiters:
   # comment delimiters
   - double_slash
