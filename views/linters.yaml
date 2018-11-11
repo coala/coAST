@@ -1,0 +1,5 @@
+path:
+  template: /{{ linter.name }}/
+  for-each:
+    linter: session.query(Linter).all()
+template: Linter

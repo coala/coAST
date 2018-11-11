@@ -1,5 +1,5 @@
 path:
-  template: /{{ language.identifier }}
+  template: /{{ language.identifier }}/
   for-each:
     language: session.query(Language).all()
 template: Language
