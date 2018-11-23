@@ -1,0 +1,4 @@
+keyword: float
+integer-min: 'uncertain'
+integer-max: 'uncertain'
+integer-signed: true

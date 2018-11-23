@@ -1,0 +1,4 @@
+keyword: short
+integer-min: '-32768'
+integer-max: '32767'
+integer-signed: true
