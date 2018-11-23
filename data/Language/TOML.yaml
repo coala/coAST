@@ -1,0 +1,26 @@
+identifier: TOML
+creation_date: 2013
+wikidata: Q28449455
+full_name: Tom's Obvious, Minimal Language
+extensions:
+  - toml
+line_continuation:
+  - backslash
+delimiters:
+  - hash
+  - single_quote
+  - double_quote_slash_escape
+  - triple_single_quote
+  - triple_double_quote
+  - square_braces
+  - curly_braces
+datatypes:
+  - integer_toml
+  - float
+  - boolean_toml
+  - offset_datetime
+  - datetime
+  - local_date
+  - local_time
+  - array
+  - table

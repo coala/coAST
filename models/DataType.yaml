@@ -1,5 +1,5 @@
 keyword: String  # Keyword that identifies the type i.e. int, str
-name: String # Common name of the type
+name: String  # Common name of the type
 # Integer attributes
 integer-min: String  # String representing minimum integer or uncertain
 integer-max: String  # String represetinng maximum integer or uncertain
