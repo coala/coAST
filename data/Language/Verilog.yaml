@@ -153,15 +153,15 @@ keywords:
   - xnor
   - xor
 datatypes:
-  - shortint
-  - int
-  - longint
-  - byte
-  - bit
-  - logic
-  - reg
-  - integer
-  - real
-  - shortreal
-  - realtime
-  - time
+  - short_vlog
+  - int_32
+  - long_vlog
+  - byte_vlog
+  - bit_vlog
+  - logic_vlog
+  - reg_vlog
+  - integer_vlog
+  - real_vlog
+  - shortreal_vlog
+  - realtime_vlog
+  - time_vlog
