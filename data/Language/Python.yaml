@@ -53,6 +53,5 @@ keywords:
 datatypes:
   - bool_title_case
   - int_python
-  - str_python
   - float_python
   - none_python
