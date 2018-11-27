@@ -20,7 +20,21 @@ delimiters:
   - double_quote_slash_escape
   - curly_braces
 datatypes:
-  - boolean_rust
+  - bool_rust
+  - char_rust
+  - u8_rust
+  - u16_rust
+  - u32_rust
+  - u64_rust
+  - u128_rust
+  - i8_rust
+  - i16_rust
+  - i32_rust
+  - i64_rust
+  - i128_rust
+  - f32_rust
+  - f64_rust
+  - str_rust
 keywords:
   - Self
   - abstract

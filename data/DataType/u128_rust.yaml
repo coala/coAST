@@ -1,0 +1,4 @@
+keyword: u128
+integer-min: '0'
+integer-max: '340282366920938463463374607431768211455'
+integer-signed: false

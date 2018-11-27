@@ -1,0 +1,4 @@
+keyword: f64
+integer-min: '-1.79769313486E49'
+integer-max: '1.79769313486E49'
+integer-signed: true

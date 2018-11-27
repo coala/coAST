@@ -1,4 +1,4 @@
-keyword: uint32
+keyword: u32
 integer-min: '0'
 integer-max: '4294967295'
 integer-signed: false

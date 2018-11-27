@@ -1,4 +1,4 @@
-keyword: int16
+keyword: i16
 integer-min: '-32768'
 integer-max: '32767'
 integer-signed: true

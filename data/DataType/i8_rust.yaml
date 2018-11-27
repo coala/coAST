@@ -1,4 +1,4 @@
-keyword: int8
+keyword: i8
 integer-min: '-128'
 integer-max: '127'
 integer-signed: true

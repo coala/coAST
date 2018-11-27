@@ -1,0 +1,4 @@
+keyword: f32
+integer-min: '-3.4028235E38'
+integer-max: '3.4028235E38'
+integer-signed: true
