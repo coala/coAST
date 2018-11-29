@@ -1,0 +1,88 @@
+identifier: CoffeeScript
+wikidata: Q1106819
+aliases:
+  - coffee
+creation_date: 20091213
+extensions:
+  - coffee
+  - litcoffee
+line_continuation:
+  - backslash
+delimiters:
+  # comment delimiters
+  - hash
+  - triple_hash
+  # string delimiters
+  - single_quote_slash_escape
+  - double_quote_slash_escape
+  - triple_single_quote
+  - triple_double_quote
+  - backticks
+  # block delimiters
+  - curly_braces
+  - round_braces
+  - square_braces
+datatypes:
+  - boolean_coffeescript
+keywords:
+  - and
+  - arguments
+  - await
+  - break
+  - by
+  - case
+  - catch
+  - class
+  - const
+  - continue
+  - debugger
+  - default
+  - defer
+  - delete
+  - do
+  - else
+  - enum
+  - export
+  - extends
+  - finally
+  - for
+  - function
+  - if
+  - implements
+  - import
+  - in
+  - Infinity
+  - instanceof
+  - interface
+  - is
+  - isnt
+  - let
+  - loop
+  - NaN
+  - native
+  - new
+  - not
+  - 'null'
+  - of
+  - or
+  - package
+  - private
+  - protected
+  - public
+  - return
+  - static
+  - super
+  - switch
+  - then
+  - this
+  - throw
+  - try
+  - typeof
+  - undefined
+  - unless
+  - var
+  - void
+  - when
+  - while
+  - with
+  - yield

@@ -1,0 +1,10 @@
+name: boolean
+integer-min: '0'
+integer-max: '1'
+literals:
+  - 'true'
+  - 'yes'
+  - 'on'
+  - 'false'
+  - 'no'
+  - 'off'
