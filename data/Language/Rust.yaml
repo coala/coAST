@@ -1,6 +1,8 @@
 identifier: Rust
+creation_date: 20080707
 full_name: Rust
 wikidata: Q575650
+grammar_file: https://github.com/jbclements/rust-antlr/blob/master/Rust.g4
 aliases:
   - Rust
   - rs
