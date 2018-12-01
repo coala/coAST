@@ -2,7 +2,8 @@ identifier: Visual Basic
 full_name: Visual Basic
 creation_date: 1991
 wikidata: Q2378
-grammar_file: https://github.com/antlr/grammars-v4/blob/master/vb6/VisualBasic6.g4
+grammar_file:
+  https://github.com/antlr/grammars-v4/blob/master/vb6/VisualBasic6.g4
 aliases:
   - vb
 extensions:

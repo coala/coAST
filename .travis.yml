@@ -1,0 +1,10 @@
+language: python
+python: 3.5
+
+install:
+  - pip install setuptools==21 pip==9
+  - pip install 'git+https://github.com/coala/coala#egg=coala'
+  - pip install 'git+https://github.com/coala/coala-bears#egg=coala-bears'
+
+script:
+  - coala --ci
