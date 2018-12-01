@@ -14,9 +14,13 @@
     <tr>
       <th>Grammar File</th>
       <td>
+        {% if language.grammar_file %}
         <a href = {{ language.grammar_file }}>
           {{ m.show_grammar(language.grammar_file) }}
         </a>  
+        {% else %}
+          {{ m.show_grammar(language.grammar_file) }}
+        {% endif %}{# if language.grammar_file #}
       </td>
     </tr>    
     <tr>
