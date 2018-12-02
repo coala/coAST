@@ -22,7 +22,7 @@ delimiters:
   - double_quote_slash_escape
   - curly_braces
 datatypes:
-  - bool_rust
+  - bool_lower_case
   - char_rust
   - u8_rust
   - u16_rust

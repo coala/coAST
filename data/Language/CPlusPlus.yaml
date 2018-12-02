@@ -112,7 +112,7 @@ keywords:
   - '#line'
   - '#pragma'
 datatypes:
-  - bool_cpp
+  - bool_lower_case
   - void_cpp
   - short_c
   - ushort_c

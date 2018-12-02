@@ -69,7 +69,7 @@ datatypes:
   - short_c
   - ushort_c
   - uint_c
-  - int_c
+  - int
   - long_c
   - ulong_c
   - llong_c

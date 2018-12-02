@@ -49,14 +49,15 @@ datatypes:
   - interface
   - map
   - struct
-  - uint8_go
-  - uint16_go
-  - uint32_go
-  - uint64_go
-  - int8_go
-  - int16_go
-  - int32_go
-  - int64_go
+  - uint8
+  - uint16
+  - uint32
+  - uint64
+  - int
+  - int8
+  - int16
+  - int32
+  - int64
   - float32
   - float64
   - complex64

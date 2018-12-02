@@ -15,6 +15,17 @@ delimiters:
   - round_braces
   - square_braces
   - curly_braces
+datatypes:
+  - bool_lower_case
+  - int8
+  - int16
+  - int32
+  - int64
+  - uint8
+  - uint16
+  - uint32
+  - uint64
+  - float_swift
 keywords:
   - class
   - case

@@ -1,0 +1,5 @@
+keyword: float
+integer-min: '-3.4028235e+38'
+integer-max: '3.4028235e+38'
+integer-signed: true
+precision: 6

@@ -13,7 +13,7 @@ delimiters:
   # string delimiters:
   - double_quote_slash_escape
 datatypes:
-  - boolean_d
+  - bool_lower_case
   - byte_d
   - char_d
   - const_d
@@ -24,7 +24,7 @@ datatypes:
   - float_d
   - idouble_d
   - ifloat_d
-  - int_d
+  - int
   - long_d
   - real_d
   - short_d

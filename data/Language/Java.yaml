@@ -17,7 +17,7 @@ datatypes:
   - boolean_java
   - byte_java
   - char_java
-  - int_java
+  - int
   - long_java
   - short_java
   - float_java
