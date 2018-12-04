@@ -72,8 +72,8 @@ keywords:
   - with
   - xor
 datatypes:
-  - string
-  - boolean
-  - integer
-  - real
-  - char
+  - boolean_upper_case
+  - char_pascal
+  - integer_pascal
+  - real_pascal
+  - string_pascal

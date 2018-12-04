@@ -1,0 +1,5 @@
+keyword: real
+integer-min: '-3.4E+38'
+integer-max: '3.4E+38'
+integer-signed: true
+precision: 7

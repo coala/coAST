@@ -1,0 +1,4 @@
+keyword: boolean
+literals:
+  - 'TRUE'
+  - 'FALSE'
