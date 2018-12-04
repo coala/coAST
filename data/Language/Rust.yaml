@@ -17,7 +17,7 @@ delimiters:
   - triple_slash
   - doc_comment
   - multiline_slash_star
-  # string delimiters:
+  # string delimiters
   - c_char
   - double_quote_slash_escape
   - curly_braces

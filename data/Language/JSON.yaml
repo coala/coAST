@@ -7,8 +7,8 @@ extensions:
 aliases:
   - json
 delimiters:
-  # String delimiter:
+  # string delimiter
   - double_quote_slash_escape
-  # Block delimiter:
+  # block delimiter
   - curly_braces
   - square_braces

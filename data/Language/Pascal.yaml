@@ -15,7 +15,7 @@ delimiters:
   # comment delimiters
   - double_slash
   - curly_braces
-  # block delimiters:
+  # block delimiters
   - single_quote_slash_escape
   - round_braces
   - square_braces

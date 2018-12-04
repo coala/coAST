@@ -8,10 +8,10 @@ aliases:
 extensions:
   - java
 delimiters:
-  # comment delimters:
+  # comment delimiters
   - double_slash
   - multiline_slash_star
-  # string delimiters:
+  # string delimiters
   - double_quote_slash_escape
 datatypes:
   - boolean_java

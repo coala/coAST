@@ -15,7 +15,7 @@ delimiters:
   # comment delimiters
   - single_quote_comment
   - rem
-  # string delimiters:
+  # string delimiters
   - double_quote
 keywords:
   - access

@@ -15,7 +15,7 @@ delimiters:
   # comment delimiters
   - triple_slash
   - multiline_double_slash_star
-  # string delimiters:
+  # string delimiters
   - double_quote_slash_escape
   - verbatim
   - curly_braces

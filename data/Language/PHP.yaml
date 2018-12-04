@@ -13,7 +13,7 @@ delimiters:
   # comment delimiters
   - double_slash
   - multiline_slash_star
-  # string delimiters:
+  # string delimiters
   - php_short_open_tag
   - c_char
   - double_quote_slash_escape

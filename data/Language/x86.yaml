@@ -13,12 +13,12 @@ extensions:
   - asm
 # No line continuation
 delimiters:
-  # comment delimiters:
+  # comment delimiters
   - semicolon              # Standard
   - hash                   # GAS support
   - double_slash           # GAS AArch4 support
   - multiline_slash_star   # GAS supported multi-line comment
-  # string delimiters:
+  # string delimiters
   - double_quote
 keywords:
   - aad

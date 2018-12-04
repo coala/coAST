@@ -17,7 +17,7 @@ delimiters:
   # comment delimiters
   - double_slash
   - multiline_slash_star
-  # string delimiters:
+  # string delimiters
   - c_char
   - double_quote_slash_escape
   - cpp_raw
