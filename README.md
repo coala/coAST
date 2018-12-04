@@ -21,7 +21,7 @@ Sensitive Tree.
 
 To achieve the first goal, the primary output of this repository is a
 static website which allows the reader to understand the definitions
-contained there and link to other online resources where more information
+contained here and links to other online resources where more information
 can be obtained.
 
 Links to Wikidata, Antlr definitions, E(BNF) files, example files, will
@@ -40,9 +40,9 @@ accessible and useful to students of language theory.
    on style descriptions which describe a subset of a language.
 
 2. Create programs to load these definitions and convert input files
-   into a universal AST, primarily for building a test suite to verify that
-   the language definitions are able to parse files at useful levels of
-   detail. Again, focusing on style-defined subsets of languages, which are
+   into a universal AST. This is primarily for building a test suite to verify
+   that the language definitions are able to parse files at useful levels of
+   detail, focusing on style-defined subsets of languages, which are
    easier and also more useful.
 
    These programs may use existing parsers by converting the coAST
@@ -62,7 +62,7 @@ These phases will be slightly overlapping.
 
 The language definitions found at
 https://github.com/coala/coala/tree/master/coalib/bearlib/languages
-will be manually added as language definitions, growing the schema
+will be manually added as language definitions here, growing the schema
 as necessary. Once the import of facts is complete, a generator will
 create the coala language definitions from a snapshot of the coAST language
 definitions, putting the collated coAST definitions into use.
@@ -75,7 +75,7 @@ In the second phase, those external grammars will be converted
 into coAST facts using batch import tools, or manually where necessary.
 
 In this phase, tools to convert the coAST definitions into other syntax
-will be needed to roundtrip the language definitions. This will provide
+will be needed to round-trip the language definitions. This will provide
 verification that the imports are complete, or that partial definitions
 allow correct partial parsing of those languages where complete parsing is
 too complex.
@@ -88,7 +88,7 @@ coding guidelines and Airbnb JavaScript style.
 The schema for describing styles will borrow from the coala aspects
 definitions, and should allow users to define their own custom styles.
 The priority, however, will be accurately describing well-established
-style guides, and important features of commonly used linters of various
+style guides and important features of commonly used linters of various
 languages.
 
 ### Phase 4: Replace coala aspects
