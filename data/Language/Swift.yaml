@@ -1,6 +1,7 @@
 identifier: Swift
 creation_date: 20140602
 wikidata: Q17118377
+grammar_file: https://github.com/antlr/grammars-v4/blob/master/swift3/Swift3.g4
 versions: 1.0, 1.1, 1.2, 2.0, 3.0, 4.0, 4.1, 4.2
 aliases:
   - swift
