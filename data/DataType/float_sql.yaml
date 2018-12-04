@@ -1,0 +1,4 @@
+keyword: float
+integer-min: '-12345678'
+integer-max: '123.45678'
+integer-signed: true
