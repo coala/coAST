@@ -7,7 +7,7 @@ aliases:
 extensions:
   - d
 delimiters:
-  # comment delimters:
+  # comment delimiters:
   - double_slash
   - multiline_slash_star
   # string delimiters:
