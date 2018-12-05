@@ -1,1 +1,2 @@
+git+https://github.com/kx-chen/netlify_deployer
 git+https://github.com/thanethomson/statik
