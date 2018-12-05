@@ -15,11 +15,11 @@ delimiters:
   - double_quote_slash_escape
 datatypes:
   - boolean_java
-  - byte_java
+  - byte
   - char_java
   - int
-  - long_java
-  - short_java
+  - long_2E63
+  - short
   - float_java
   - double_java
 keywords:

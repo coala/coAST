@@ -1,4 +1,0 @@
-keyword: long
-integer-min: '-9223372036854775808'
-integer-max: '9223372036854775807'
-integer-signed: true

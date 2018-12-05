@@ -114,7 +114,7 @@ keywords:
 datatypes:
   - bool_lower_case
   - void_cpp
-  - short_c
+  - short
   - ushort_c
   - uint_c
   - int_c

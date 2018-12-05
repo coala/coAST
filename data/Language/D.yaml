@@ -14,8 +14,8 @@ delimiters:
   - double_quote_slash_escape
 datatypes:
   - bool_lower_case
-  - byte_d
-  - char_d
+  - byte
+  - char_java
   - const_d
   - cdouble_d
   - cfloat_d
@@ -25,9 +25,9 @@ datatypes:
   - idouble_d
   - ifloat_d
   - int
-  - long_d
+  - long_2E63
   - real_d
-  - short_d
+  - short
   - ubyte_d
   - ucent_d
   - uint_d

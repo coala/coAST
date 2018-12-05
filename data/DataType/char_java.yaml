@@ -3,4 +3,4 @@ integer-min: '0'
 integer-max: '65535'
 integer-signed: false
 delimiters:
-  - java_char
+  - c_char

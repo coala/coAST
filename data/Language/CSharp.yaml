@@ -91,9 +91,9 @@ datatypes:
   - double_c
   - float_c
   - int_c
-  - long_cs
+  - long_2E63
   - sbyte_cs
-  - short_c
+  - short
   - uint_cs
   - ulong_cs
   - ushort_cs
