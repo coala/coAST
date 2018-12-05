@@ -1,0 +1,4 @@
+type: comment
+# Different number of = symbols provides nesting
+start: '--[===['
+end: ']===]'

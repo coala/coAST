@@ -1,0 +1,39 @@
+identifier: Lua
+creation_date: 1993
+full_name: Lua
+wikidata: Q207316
+grammar_file: https://github.com/antlr/grammars-v4/blob/master/lua/Lua.g4
+extensions:
+  - lua
+delimiters:
+  # comment delimiters
+  - double_hyphen
+  - double_hyphen_double_brackets
+  - nested_block_comment_lua
+  # string delimiters
+  - double_quote_slash_escape
+  - single_quote_slash_escape
+datatypes:
+  - bool_lower_case
+  - string          # TODO
+  - number          # TODO
+  - function        # TODO
+  - nil             # TODO
+keywords:
+  - and
+  - break
+  - do
+  - else
+  - elseif
+  - end
+  - for
+  - if
+  - in
+  - local
+  - not
+  - or
+  - repeat
+  - return
+  - then
+  - until
+  - while
