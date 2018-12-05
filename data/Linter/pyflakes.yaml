@@ -1,0 +1,10 @@
+name: pyflakes
+executable: pyflakes
+packages:
+  - pyflakes
+languages:
+  - Python
+aspects:
+  - Syntax
+  - Unused Code
+  - Undefined Element

@@ -1,0 +1,6 @@
+name: infer
+manager: opam
+source: https://github.com/facebook/infer/releases/download/
+        v0.7.0/infer-linux64-v0.7.0.tar.xz
+version: 0.7.0
+platform: linux

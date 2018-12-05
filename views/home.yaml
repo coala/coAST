@@ -5,3 +5,4 @@ context:
     page-title: Welcome
   dynamic:
     languages: session.query(Language).all()
+    linters: session.query(Linter).all()

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ site_title }}: {{ package.name }}</title>
+  <link rel="stylesheet" href="../assets/css/coala.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/coast.css" type="text/css" />
+</head>
+<body>
+  <section class="thin-row-small">
+    <h1>{{ package.name }}</h1>
+  </section>
+  <table>
+    <tr>
+      <th>Package manager</th>
+      <td>{{ package.manager.name }}</td>
+    </tr>
+    <tr>
+      <th>Version</th>
+      <td>{{ package.version }}</td>
+    </tr>
+    <tr>
+      <th>Source</th>
+      <td>{{ package.source }}</td>
+    </tr>
+    <tr>
+      <th>Platform</th>
+      <td>{{ package.platform }}</td>
+    </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,7 @@
+name: String
+manager: PackageManager
+version: String
+repology_id: String  # optional
+wikidata: String  # optional
+source: String  # optional
+platform: Platform  # optional

@@ -1,0 +1,5 @@
+path:
+  template: /{{ package.manager.pk }}/{{ package.name }}-{{ package.version }}/
+  for-each:
+    package: session.query(Package).all()
+template: Package

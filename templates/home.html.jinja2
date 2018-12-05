@@ -10,10 +10,24 @@
   <section class="thin-row-small">
     <h1>{{ page_title }}</h1>
   </section>
+
+  <section class="thin-row-small">
+    <h2>Languages</h1>
+  </section>
+
   <ul class="thin-row-medium" id="languages-list">
   {% for language in languages %}
     <li><a href="{% url 'languages', language %}">{{ m.language_name(language) }}</a>
   {% endfor %}{# for language in languages #}
+  </ul>
+
+  <section class="thin-row-small">
+    <h2>Linters</h1>
+  </section>
+  <ul class="thin-row-medium" id="linter-list">
+  {% for linter in linters %}
+    <li><a href="{% url 'linters', linter %}">{{ linter.name }}</a>
+  {% endfor %}{# for linter in linters #}
   </ul>
 </body>
 </html>

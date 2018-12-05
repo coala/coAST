@@ -1,0 +1,8 @@
+name: String
+executable: String
+repology_id: String  # optional
+wikidata: String  # optional
+website: String
+languages: Language[]
+aspects: Aspect[]  # i.e. CAN_DETECT & CAN_FIX
+packages: Package[]  # only needed where Repology does not provide

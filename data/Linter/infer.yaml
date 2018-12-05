@@ -1,0 +1,12 @@
+name: Infer
+executable: infer
+website: https://fbinfer.com/
+packages:
+  - infer-0.7.0-linux
+languages:
+  - C
+  - CPlusPlus
+  - Java
+  - Objective-C
+aspects:
+  - Security
