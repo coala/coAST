@@ -19,3 +19,11 @@ delimiters:
   - round_braces
   - square_braces
   - backticks
+datatypes:
+  - boolean_toml
+  - null_js
+  - undefined_js
+  - number_js
+  - string_js
+  - symbol_js
+  - object_js

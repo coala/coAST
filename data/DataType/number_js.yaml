@@ -1,0 +1,4 @@
+name: Number
+integer-min: '5e-324'
+integer-max: '1.7976931348623157e+308'
+integer-signed: true
