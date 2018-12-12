@@ -5,15 +5,47 @@
   <title>{{ site_title }}</title>
   <link rel="stylesheet" href="assets/css/coala.css" type="text/css" />
   <link rel="stylesheet" href="assets/css/coast.css" type="text/css" />
+  <link rel="stylesheet" href="assets/css/materialize.min.css">
+  <link rel="stylesheet" href="assets/css/Roboto.css" type="text/css">
+  <script src="assets/js/materialize.min.js"></script>
+  <link rel="shortcut icon" type="image/png" href="assets/images/favicon.ico"/>
 </head>
 <body>
-  <section class="thin-row-small">
-    <h1>{{ page_title }}</h1>
+
+  <section>
+    <div class="row container">
+      <div class="col s12 m4 l4">
+        <img class="logo centre" src="https://api.coala.io/en/latest/_static/images/coala_logo.svg">
+      </div>
+      <div class="col s12 m6 l6">
+        <div class="title">{{ page_title }}</div>
+      </div>
+    </div>
+      <h4 class="center light">{{ page_subtitle }}</h4>
+      <br>
   </section>
-  <ul class="thin-row-medium" id="languages-list">
-  {% for language in languages %}
-    <li><a href="{% url 'languages', language %}">{{ m.language_name(language) }}</a>
-  {% endfor %}{# for language in languages #}
-  </ul>
+
+  <div class="container">
+    <div class="thin-row-medium" id="languages-list">
+      <div class="row">
+        {% for language in languages %}
+          <div class="col s6 m4 l2" style="display: inline-block">
+            <div class="card hoverable transparent card-small">
+              <div class="card-image">
+                <a href="{% url 'languages', language %}">
+                  <img src="assets/logos/{{ m.language_id(language) }}.svg" class="lang-logo">
+                </a>
+              </div>
+            </div>
+          </div>
+        {% endfor %}{# for language in languages #}
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer">
+    <h6><a href="attributions">Click here for attributions for some logos.</a></h6>
+  </footer>
+
 </body>
 </html>

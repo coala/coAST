@@ -31,3 +31,7 @@
   {% endfor %}{# for item in delimiters #}
 </ul>
 {% endmacro %}
+
+{%- macro language_id(language) -%}
+  {{ language.identifier }}
+{% endmacro %}

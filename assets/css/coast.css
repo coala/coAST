@@ -1,6 +1,30 @@
 html{
   font-family: Roboto;
+  width: 100%;
 }
+
+body{
+  background-attachment: fixed;
+  background-image:url('../images/bg.png');
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+h4 {
+  font-weight: normal;
+}
+
+.title {
+  font-size: 10em;
+  font-weight: 200;
+  text-align: left;
+}
+
+.logo {
+  margin-top: inherit;
+}
+
 #languages-list{
   list-style: none;
   padding-left: 0;
@@ -16,16 +40,21 @@ a:hover{
   text-decoration: underline;
 }
 
-table{
-  border: 1px solid #00de87;
-  border-collapse: collapse;
-  margin: auto;
-  width: 80%;
+.card-small {
+  height: 128px;
+  width: 128px;
 }
 
-tr:nth-child(odd){
-  background-color: #57ffbd;
+.lang-logo{
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  transform: translateY(15%);
 }
-tr:nth-child(even){
-  background-color: #96ffd6;
+
+.thin-row-medium {
+  font-family: Roboto, sans-serif;
+  font-weight: lighter;
 }

@@ -1,8 +1,6 @@
-path: /
-template: home
+path: /attributions
+template: attributions
 context:
   static:
     page-title: coAST
     page-subtitle: Universal Abstract Syntax Tree, by coala
-  dynamic:
-    languages: session.query(Language).all()

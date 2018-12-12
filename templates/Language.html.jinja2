@@ -4,73 +4,156 @@
 <head>
   <title>{{ site_title }}</title>
   <link rel="stylesheet" href="../assets/css/coala.css" type="text/css" />
-  <link rel="stylesheet" href="../assets/css/coast.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/coAST.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/materialize.min.css">
+  <link rel="stylesheet" href="../assets/css/Roboto.css" type="text/css">
+  <link rel="shortcut icon" type="image/png" href="../assets/images/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/materialize.min.js"></script>
+
+  <script>
+  $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+  </script>
+
 </head>
 <body>
-  <section class="thin-row-small">
-    <h1>{{ m.language_name(language) }}</h1>
+
+  <section>
+    <div class="title">
+      <div class="row container">
+        <div class="col s6 m6 l6 right-align">
+          <h2>{{ m.language_name(language) }}</h2>
+        </div>
+        <div class="col s6 m6 l6">
+          <img src="../assets/logos/{{ m.language_id(language) }}.svg" alt="logo" class="lang-logo"/>
+        </div>
+      </div>
+    </div>
   </section>
-  <table>
-    <tr>
-      <th>Grammar File</th>
-      <td>
-        {% if language.grammar_file %}
-        <a href = {{ language.grammar_file }}>
-          {{ m.show_grammar(language.grammar_file) }}
-        </a>  
-        {% else %}
-          {{ m.show_grammar(language.grammar_file) }}
-        {% endif %}{# if language.grammar_file #}
-      </td>
-    </tr>    
-    <tr>
-      <th>Aliases</th>
-      <td>
-        {{ m.show_list(language.aliases) }}
-      </td>
-    </tr>
-    <tr>
-      <th>Extensions</th>
-      <td>
-        {{ m.show_list(language.extensions) }}
-      </td>
-    </tr>
-    <tr>
-      <th>{{ delimiter_type_comment.name }} delimiters</th>
-      <td>
+
+  <ul class="collapsible popout">
+    <li>
+      <div class="collapsible-header">
+        <i class="material-icons">attachment</i>
+        Grammar file
+      </div>
+      <div class="collapsible-body">
+        <span>
+          {% if language.grammar_file %}
+            <a href = {{ language.grammar_file }}>
+              {{ m.show_grammar(language.grammar_file) }}
+            </a>
+          {% else %}
+            {{ m.show_grammar(language.grammar_file) }}
+          {% endif %}{# if language.grammar_file #}
+        </span>
+      </div>
+    </li>
+
+    <li>
+      <div class="collapsible-header">
+        <i class="material-icons">people</i>
+        Aliases
+      </div>
+      <div class="collapsible-body">
+        <span>
+          {{ m.show_list(language.aliases) }}
+        </span>
+      </div>
+    </li>
+
+    <li>
+      <div class="collapsible-header">
+        <i class="material-icons">description</i>
+        Extensions
+      </div>
+      <div class="collapsible-body">
+        <span>
+          {{ m.show_list(language.extensions) }}
+        </span>
+      </div>
+    </li>
+
+    <li>
+      <div class="collapsible-header">
+        <i class="material-icons">whatshot</i>
+        {{ delimiter_type_comment.name }} delimiters
+      </div>
+      <div class="collapsible-body">
+        <span>
           {{ m.show_delimiter_list(language.delimiters, delimiter_type_comment) }}
-      </td>
-    </tr>
-    <tr>
-      <th>{{ delimiter_type_string.name }} delimiters</th>
-      <td>
+        </span>
+      </div>
+    </li>
+
+    <li>
+      <div class="collapsible-header">
+        <i class="material-icons">border_color</i>
+        {{ delimiter_type_string.name }} delimiters
+      </div>
+      <div class="collapsible-body">
+        <span>
           {{ m.show_delimiter_list(language.delimiters, delimiter_type_string) }}
-      </td>
-    </tr>
-    <tr>
-      <th>{{ delimiter_type_block.name }} delimiters</th>
-      <td>
+        </span>
+      </div>
+    </li>
+
+    <li>
+      <div class="collapsible-header">
+        <i class="material-icons">border_color</i>
+        {{ delimiter_type_block.name }} delimiters
+      </div>
+      <div class="collapsible-body">
+        <span>
           {{ m.show_delimiter_list(language.delimiters, delimiter_type_block) }}
-      </td>
-    </tr>
-    <tr>
-      <th>Datatypes</th>
-      <td>
-        {{ m.show_list(language.datatypes) }}
-      </td>
-    </tr>
-    <tr>
-      <th>Line Continuation Characters</th>
-      <td>
-        {{ m.show_list(language.line_continuation) }}
-      </td>
-    </tr>
-    <tr>
-      <th>Keywords</th>
-      <td>
-        {{ m.show_list(language.keywords) }}
-      </td>
-    </tr>
-  <table>
+        </span>
+      </div>
+    </li>
+
+    <li>
+      <div class="collapsible-header">
+        <i class="material-icons">border_color</i>
+        Datatypes
+      </div>
+      <div class="collapsible-body">
+        <span>
+          {{ m.show_list(language.datatypes) }}
+        </span>
+      </div>
+    </li>
+
+    <li>
+      <div class="collapsible-header">
+        <i class="material-icons">computer</i>
+        Line Continuation Characters
+      </div>
+      <div class="collapsible-body">
+        <span>
+          {{ m.show_list(language.line_continuation) }}
+        </span>
+      </div>
+    </li>
+
+    <li>
+      <div class="collapsible-header">
+        <i class="material-icons">code</i>
+        Keywords
+      </div>
+      <div class="collapsible-body">
+        <span>
+          {{ m.show_list(language.keywords) }}
+        </span>
+      </div>
+    </li>
+
+  </ul>
+
+  <footer class="page-footer">
+    <h6><a href="../attributions">Click here for attributions for some logos.</a></h6>
+  </footer>
+
 </body>
 </html>

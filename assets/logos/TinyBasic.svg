@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg3844"
+   version="1.1"
+   sodipodi:docname="TinyBasic.svg"
+   viewBox="-60 -60 100 100"
+   height="100mm"
+   width="100mm"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <defs
+     id="defs3846" />
+  <sodipodi:namedview
+     id="namedview3834"
+     inkscape:snap-grids="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:bbox-nodes="true"
+     inkscape:bbox-paths="true"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:window-height="837"
+     inkscape:window-width="1600"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:snap-bbox="true"
+     inkscape:snap-global="true"
+     inkscape:guide-bbox="true"
+     showguides="true"
+     units="mm"
+     showgrid="false"
+     inkscape:current-layer="Template"
+     inkscape:document-units="mm"
+     inkscape:cy="212.79667"
+     inkscape:cx="217.83575"
+     inkscape:zoom="1"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <sodipodi:guide
+       orientation="1,0"
+       position="216.46986,215.1366"
+       id="guide2827"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="216.46986,215.1366"
+       id="guide2829"
+       inkscape:locked="false" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid3072"
+       empspacing="10"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       units="mm"
+       dotted="false"
+       spacingx="0.1mm"
+       spacingy="0.1mm"
+       originx="-10.301791"
+       originy="-11.635047" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata2822">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="Template"
+     style="fill:none;stroke:#000000;stroke-width:0.05"
+     transform="translate(-10.301791,-8.3649511)">
+    <rect
+       style="fill:#00aa88;stroke-width:0.01304056"
+       id="rect3854"
+       width="99.986961"
+       height="99.986961"
+       x="-49.691689"
+       y="-51.628529"
+       ry="23.018749" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.01322917"
+       x="-2.1104624"
+       y="-7.5757704"
+       id="text3860"><tspan
+         sodipodi:role="line"
+         id="tspan3858"
+         x="-2.110462"
+         y="-7.5757704"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.39999962px;font-family:'Segoe Script';-inkscape-font-specification:'Segoe Script';text-align:center;text-anchor:middle;fill:#dbe3db;stroke-width:0.01322917">TINY</tspan><tspan
+         sodipodi:role="line"
+         x="-2.1104627"
+         y="24.174229"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.39999962px;font-family:'Segoe Script';-inkscape-font-specification:'Segoe Script';text-align:center;text-anchor:middle;fill:#dbe3db;stroke-width:0.01322917"
+         id="tspan3862">BASIC</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100"
+   height="100"
+   id="svg3019"
+   version="1.1"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="Vlog.svg">
+  <defs
+     id="defs3021" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.3941126"
+     inkscape:cx="186.242"
+     inkscape:cy="66.919537"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3027"
+       originx="-1.2044736"
+       originy="-98.488709" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata3024">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     transform="translate(-1.2044736,-401.51129)">
+    <rect
+       style="fill:#241c1c;fill-opacity:1;stroke-width:0.17835908"
+       id="rect4093"
+       width="83.812813"
+       height="95.892555"
+       x="9.1594257"
+       y="404.1456"
+       ry="18.908394" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#ffd42a;fill-opacity:1;stroke:none;stroke-width:0.28827482"
+       d="m 28.021469,431.16471 c 0,1.99808 1.400299,3.61783 3.127657,3.61783 1.456398,0 2.632913,-1.15454 2.981053,-2.71337 h 19.694482 v 7.23564 h -4.056183 c -0.348141,-1.55883 -1.524654,-2.71336 -2.981049,-2.71336 -1.727359,0 -3.127663,1.61974 -3.127663,3.61782 0,1.99806 1.400304,3.61782 3.127663,3.61782 1.456395,0 2.632908,-1.15453 2.981049,-2.71336 h 4.8381 0.781914 v -0.90446 -8.1401 h 14.074467 v 4.63533 c -1.349118,0.40152 -2.345744,1.8189 -2.345744,3.50477 0,1.99806 1.400301,3.61782 3.127658,3.61782 1.72736,0 3.127662,-1.61976 3.127662,-3.61782 0,-1.67271 -1.012661,-3.0907 -2.345745,-3.50477 v -5.53979 -0.90445 h -0.781917 -7.037232 v -8.1401 -0.90446 H 62.425727 47.569341 v -4.63533 c 1.33309,-0.41405 2.345748,-1.83207 2.345748,-3.50476 0,-1.99807 -1.400303,-3.61782 -3.12766,-3.61782 -1.727359,0 -3.127663,1.61975 -3.127663,3.61782 0,1.68587 0.99663,3.10326 2.345749,3.50476 v 4.63533 h -4.056187 c -0.348142,-1.55883 -1.524655,-2.71336 -2.981051,-2.71336 -1.727359,0 -3.127659,1.61976 -3.127659,3.61782 0,1.99807 1.4003,3.61781 3.127659,3.61781 1.456396,0 2.632909,-1.15453 2.981051,-2.71335 H 61.64381 v 7.23564 H 34.130179 c -0.34814,-1.55883 -1.524655,-2.71337 -2.981053,-2.71337 -1.727358,0 -3.127657,1.61975 -3.127657,3.61782 z"
+       id="path2999-89-9" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:7.17195654px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffcc00;fill-opacity:1;stroke:none;stroke-width:0.17929892"
+       x="10.008588"
+       y="441.7038"
+       id="text4091"
+       transform="scale(0.93489486,1.069639)"><tspan
+         sodipodi:role="line"
+         id="tspan4089"
+         x="10.008588"
+         y="441.7038"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.90651894px;font-family:'Segoe Script';-inkscape-font-specification:'Segoe Script';fill:#ffcc00;stroke-width:0.17929892">Verilog</tspan></text>
+  </g>
+</svg>
