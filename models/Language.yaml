@@ -1,7 +1,9 @@
 identifier: String
+type: LanguageType
 creation_date: Integer
 # wikidata should be Qid only
 wikidata: String
+github_language_id: Integer
 full_name: String
 # versions is a comma separated list, as normalising it has no benefit
 # given that two languages with the same version identifier are completely
@@ -13,6 +15,7 @@ versions: String
 grammar_file: String
 aliases: Alias[]
 extensions: FileExtension[]
+interpreters: Array
 line_continuation: LineCont[]
 delimiters: Delimiter[]
 datatypes: DataType[]
