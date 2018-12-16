@@ -1,0 +1,46 @@
+identifier: antlr4
+creation_date: 2017
+wikidata: Q295801
+full_name: Another Tool For Language Recognition
+grammar_file: https://github.com/antlr/grammars-v4/tree/master/antlr4
+aliases:
+  - antlr4
+extensions:
+  - g4
+line_continuation:
+  - backslash
+  - vertbar
+delimiters:
+  # comment delimiters:
+  - double_slash
+  - multiline_slash_star
+  - multiline_double_slash_star
+  # string delimiters:
+  - single_quote_slash_escape
+  # block delimiters:
+  - curly_braces
+  - round_braces
+  - square_braces
+  - antlr_colon_semicolon
+keywords:
+  - import
+  - fragment
+  - lexer
+  - parser
+  - grammar
+  - returns
+  - locals
+  - throws
+  - catch
+  - finally
+  - mode
+  - options
+  - tokens
+  - skip
+  - more
+  - popMode
+  # x is a parameter
+  - mode(x)
+  - pushMode(x)
+  - type(x)
+  - channel(x)
