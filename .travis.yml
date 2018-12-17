@@ -8,3 +8,4 @@ install:
 
 script:
   - coala --ci
+  - python tools/import_from_linguist.py
