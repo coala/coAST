@@ -75,14 +75,26 @@ def get_lexer_patterns(lexer, required_token_types=()):
 
 
 def clean_pattern(pattern):
-    """Remove unecessary parts from the regex pattern."""
-    pattern = pattern.replace('?:', '').replace('\\b', '')
-    return pattern.replace('\\\\', '\\').replace('\\s+', ' ')
+    """Unescape and remove unecessary parts from the regex pattern."""
+    REPLACEMENTS = {
+        '?:': '',
+        '\\b': '',
+        '\\s+': ' ',
+        '\\s*': '',
+        '\\*': '*',
+        '\\-': '-',
+        '\\.': '.',
+        '\\?': '?',
+        '\\\\': '\\'
+    }
+    for orig, repl in REPLACEMENTS.items():
+        pattern = pattern.replace(orig, repl)
+    return pattern
 
 
 def split_on_paren(re_pattern):
-    """ Split the pattern into three parts, one enclosed by the outermost
-        parentheses, one to the left of opening paren, and one to the right."""
+    """Split the pattern into three parts, one enclosed by the outermost
+       parentheses, one to the left of opening paren, and one to the right."""
     parts = [part for part in re.split(r'(\W)', re_pattern) if part]
     try:
         left_ind = parts.index('(')
@@ -101,7 +113,7 @@ def split_on_paren(re_pattern):
 
 
 def get_subparts(re_pattern, depth=0):
-    """ Break down the pattern into smaller parts, due to '|'"""
+    """Break down the pattern into smaller parts, due to '|'"""
 
     if not re_pattern:
         return []
@@ -152,8 +164,8 @@ def get_subparts(re_pattern, depth=0):
 
 
 def extract_keywords(re_pattern):
-    """ Recursively parse the regex pattern to find all the possible
-        strings that may match the pattern."""
+    """Recursively parse the regex pattern to find all the possible
+       strings that may match the pattern."""
     if not re_pattern:
         return ['']
 
@@ -176,8 +188,9 @@ def convert_to_keywords(lexer_patterns):
     success = True
     for pattern_type, patterns in lexer_patterns.items():
         for pattern in patterns:
+            compiled = re.compile(pattern)
             keywords = extract_keywords(clean_pattern(pattern))
-            if any(any(c in keyword for c in '(|)?') for keyword in keywords):
+            if any(compiled.match(keyword) is None for keyword in keywords):
                 success = False
             lexer_keywords[pattern_type].append(keywords)
     return success, lexer_keywords
@@ -198,7 +211,7 @@ def process_pygments():
             improper[lexer.name] = (keywords, patterns)
 
     print("Found new keywords for {} languages.".format(len(all_keywords)))
-    print(*all_keywords.keys(), sep='\n')
+    print(*all_keywords.keys(), sep='\n' if len(all_keywords) < 10 else ', ')
     print("Couldn't extract keywords for {} languages".format(len(improper)))
     for lexer, data in improper.items():
         print(lexer, data[0], data[1], sep='\n\t')
