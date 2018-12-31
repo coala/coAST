@@ -12,7 +12,7 @@
 
 {% macro show_list(list, separator=',') %}
   {% for item in list %}
-    {{ item.pk | escape }}{% if not loop.last %}{{ separator }} {% endif %}
+    {{ item | escape }}{% if not loop.last %}{{ separator }} {% endif %}
   {% endfor %}{# for item in list #}
 {% endmacro %}
 
