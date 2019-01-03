@@ -124,7 +124,10 @@ def convert_to_keywords(lexer_patterns):
     success = True
     for pattern_type, patterns in lexer_patterns.items():
         for pattern in patterns:
-            compiled = re.compile(pattern)
+            try:
+                compiled = re.compile(pattern)
+            except re.sre_compile.error:
+                compiled = re.compile(re.escape(pattern))
             keywords = extract_keywords(clean_pattern(pattern))
             if any(compiled.match(keyword) is None for keyword in keywords):
                 success = False

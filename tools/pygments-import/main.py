@@ -22,6 +22,8 @@ def read_coast_langs():
 
 
 coast_langs = dict(read_coast_langs())
+pygments_lexers = {lexer[1][0]: get_lexer_by_name(lexer[1][0])
+                   for lexer in get_all_lexers()}
 
 
 def get_coast_aliases():
@@ -47,10 +49,9 @@ def get_coast_lexers():
 
 def get_new_lexers():
     known_lexers = list(get_coast_lexers())
-    all_lexers = [get_lexer_by_name(lexer[1][0]) for lexer in get_all_lexers()]
     print("Number of known lexers:", len(known_lexers))
-    print("Number of total pygments lexers:", len(all_lexers))
-    for lexer in all_lexers:
+    print("Number of total pygments lexers:", len(pygments_lexers))
+    for lexer in pygments_lexers.values():
         if not any(known_lexer.name == lexer.name
                    for known_lexer in known_lexers):
             yield lexer
@@ -78,8 +79,9 @@ def get_lexer_patterns(lexer, required_token_types=()):
         if not current_token_type:
             continue
         if isinstance(re_pattern, pygments.lexer.words):
-            re_pattern = re_pattern.get()
-        patterns[current_token_type].append(re_pattern)
+            patterns[current_token_type].extend(re_pattern.words)
+        else:
+            patterns[current_token_type].append(re_pattern)
     return patterns
 
 
