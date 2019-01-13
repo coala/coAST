@@ -1,0 +1,4 @@
+keyword: double
+integer-min: 'uncertain'
+integer-max: 'uncertain'
+integer-signed: true

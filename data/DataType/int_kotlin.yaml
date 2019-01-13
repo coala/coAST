@@ -1,0 +1,4 @@
+keyword: int
+integer-min: '-2147483648'
+integer-max: '2147483647'
+integer-signed: true

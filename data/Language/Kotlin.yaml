@@ -1,0 +1,98 @@
+identifier: Kotlin
+wikidata: Q3816639
+grammar_file: https://github.com/antlr/grammars-v4/tree/master/kotlin
+extensions:
+  - kt
+  - ktm
+  - kts
+delimiters:
+  # comment delimiters
+  - double_slash
+  - multiline_slash_star
+  # string delimiters
+  - kotlin_char
+  - double_quote_slash_escape
+  - curly_braces
+  - square_braces
+  - round_braces
+datatypes:
+  - bool_title_case
+  - byte_kotlin
+  - short_kotlin
+  - int_kotlin
+  - long_kotlin
+  - float_kotlin
+  - double_kotlin
+keywords:
+  - abstract
+  - actual
+  - annotation
+  - as
+  - break
+  - by
+  - catch
+  - class
+  - companion
+  - const
+  - constructor
+  - continue
+  - crossinline
+  - data
+  - delegate
+  - do
+  - dynamic
+  - else
+  - enum
+  - expect
+  - external
+  - field
+  - file
+  - final
+  - finally
+  - for
+  - fun
+  - get
+  - if
+  - import
+  - in
+  - infix
+  - init
+  - inline
+  - inner
+  - interface
+  - internal
+  - is
+  - it
+  - lateinit
+  - noinline
+  - null
+  - object
+  - open
+  - operator
+  - out
+  - override
+  - package
+  - param
+  - private
+  - property
+  - protected
+  - public
+  - receiveris
+  - reified
+  - return
+  - sealed
+  - set
+  - setparam
+  - super
+  - suspend
+  - tailrec
+  - this
+  - throw
+  - try
+  - typealias
+  - val
+  - var
+  - vararg
+  - when
+  - where
+  - while
