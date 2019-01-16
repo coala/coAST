@@ -120,16 +120,15 @@ def extract_keywords(re_pattern):
 
 
 def convert_to_keywords(lexer_patterns):
-    lexer_keywords = defaultdict(list)
+    lexer_keywords = []
     success = True
-    for pattern_type, patterns in lexer_patterns.items():
-        for pattern in patterns:
-            try:
-                compiled = re.compile(pattern)
-            except re.sre_compile.error:
-                compiled = re.compile(re.escape(pattern))
-            keywords = extract_keywords(clean_pattern(pattern))
-            if any(compiled.match(keyword) is None for keyword in keywords):
-                success = False
-            lexer_keywords[pattern_type].append(keywords)
+    for pattern in lexer_patterns:
+        try:
+            compiled = re.compile(pattern)
+        except re.sre_compile.error:
+            compiled = re.compile(re.escape(pattern))
+        keywords = extract_keywords(clean_pattern(pattern))
+        if any(compiled.match(keyword) is None for keyword in keywords):
+            success = False
+        lexer_keywords.append(keywords)
     return success, lexer_keywords

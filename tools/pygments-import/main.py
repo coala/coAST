@@ -1,66 +1,96 @@
-import os.path
+import re
 import yaml
+import os.path
 from collections import defaultdict
 from itertools import chain
 
+from packaging.version import Version, InvalidVersion
 import pygments
 from pygments.token import Token
-from pygments.lexers import get_all_lexers, get_lexer_by_name
+from pygments.lexers import get_all_lexers, find_lexer_class_by_name
 
 from parser import convert_to_keywords
 
 REQUIRED_TOKEN_TYPES = (Token.Keyword, )
 
+# Remove '../../' for travis
+LANGUAGE_FOLD = os.path.abspath("../../data/Language")
 
-def read_coast_langs():
-    # Remove '../../' for travis
-    LANGUAGE_FOLD = os.path.abspath("../../data/Language")
+# Read coast language definitions
+coast_langs = {}
+for lang_file in os.listdir(LANGUAGE_FOLD):
+    with open(os.path.join(LANGUAGE_FOLD, lang_file)) as f:
+        coast_langs[lang_file.rstrip('.yaml')] = yaml.load(f)
 
-    for lang_file in os.listdir(LANGUAGE_FOLD):
-        with open(os.path.join(LANGUAGE_FOLD, lang_file)) as f:
-            yield lang_file, yaml.load(f)
-
-
-coast_langs = dict(read_coast_langs())
-pygments_lexers = {lexer[1][0]: get_lexer_by_name(lexer[1][0])
+# # Get all pygments lexers
+pygments_lexers = {find_lexer_class_by_name(lexer[1][0])
                    for lexer in get_all_lexers()}
 
 
-def get_coast_aliases():
-    for lang_file, lang in coast_langs.items():
-        possible_names = set((lang['identifier'], lang_file.rstrip('.yaml')))
-        possible_names.update(lang.get('aliases', []))
-        if 'full_name' in lang:
-            possible_names.add(lang['full_name'])
-        yield list(possible_names)
+def get_coast_lang_lexers(lang_filename, lang):
+    def gen_versioned_names(name, version):
+        try:
+            version = Version(version)
+            # print(version.)
+        except InvalidVersion:
+            return
+        yield name + " " + str(version.release[0])
+        yield name + str(version.release[0])
+        yield name + " " + version.base_version
+        yield name + version.base_version
 
+    possible_names = {lang_filename, lang['identifier']}
+    possible_names.update(lang.get('aliases', []))
+    if 'full_name' in lang:
+        possible_names.add(lang['full_name'])
 
-def get_coast_lexers():
-    for aliases in get_coast_aliases():
-        for alias in aliases:
+    lexers = set()
+
+    for alias in possible_names:
+        try:
+            lex = find_lexer_class_by_name(alias)
+        except pygments.util.ClassNotFound:
+            pass
+        else:
+            lexers.add(lex)
+            break
+    else:
+        print("No lexer for", lang_filename)
+        return
+
+    for version in lang.get('versions', '').split(', '):
+        for versioned_name in gen_versioned_names(lex.name, version):
             try:
-                yield get_lexer_by_name(alias)
-                break
+                versioned_lex = find_lexer_class_by_name(versioned_name)
             except pygments.util.ClassNotFound:
                 pass
-        else:
-            print("No lexer for", aliases[0])
+            else:
+                lexers.add(versioned_lex)
+                break
+    return tuple(lexers)
 
 
-def get_new_lexers():
-    known_lexers = list(get_coast_lexers())
-    print("Number of known lexers:", len(known_lexers))
-    print("Number of total pygments lexers:", len(pygments_lexers))
-    for lexer in pygments_lexers.values():
-        if not any(known_lexer.name == lexer.name
-                   for known_lexer in known_lexers):
-            yield lexer
+coast_lexers = {lang_file: get_coast_lang_lexers(lang_file, lang)
+                for lang_file, lang in coast_langs.items()}
+
+
+def update_coast_def(lang, lexer):
+    lexer_data = extract_lexer_data(lexer)
+
+    def update_list(param):
+        lex_keywords = set(lexer_data.get(param, []))
+        lang_keywords = set(lang.get(param, []))
+        lang_keywords.update(lex_keywords)
+        if lang_keywords:
+            lang[param] = list(sorted(lang_keywords))
+
+    update_list('keywords')
 
 
 def get_lexer_patterns(lexer, required_token_types=()):
     patterns = defaultdict(list)
     if not hasattr(lexer, 'tokens'):
-        # print('Skipping {}: no tokens'.format(lexer.name))
+        print('Skipping {}: no tokens'.format(lexer.name))
         return patterns
 
     # no need to handle each section separately
@@ -85,26 +115,58 @@ def get_lexer_patterns(lexer, required_token_types=()):
     return patterns
 
 
-def process_pygments():
-    all_keywords = {}
-    improper = {}
-    for lexer in get_new_lexers():
-        patterns = get_lexer_patterns(lexer, REQUIRED_TOKEN_TYPES)
-        if not patterns:
-            # print('Skipping {}: no required tokens'.format(lexer.name))
-            continue
-        success, keywords = convert_to_keywords(patterns)
+def extract_lexer_data(lexer):
+    data = {}
+    patterns = get_lexer_patterns(lexer, REQUIRED_TOKEN_TYPES)
+    if patterns.get(Token.Keyword):
+        success, keywords = convert_to_keywords(patterns[Token.Keyword])
         if success:
-            all_keywords[lexer.name] = keywords
+            data['keywords'] = list(chain(*keywords))
+    return data
+
+
+def detect_versioned_langs(name1, name2):
+    realname1, version1 = parse_lang_name(name1)
+    realname2, version2 = parse_lang_name(name2)
+    if version1 is None and version2 is None:
+        return False
+    elif realname1 == realname2:
+        return True, version1, version2
+    return False
+
+
+def parse_lang_name(name):
+    """Identify the version number of a language from its name."""
+    try:
+        realname, version = name.rsplit(maxsplit=1)
+        version = Version(version)
+        return realname, version
+    except (ValueError, InvalidVersion):  # look for trailing numbers
+        match = re.match(r"(?P<realname>.*?)(?P<version>[0-9.]+)$", name)
+        if match:
+            realname, version = match.groupdict().values()
+            try:
+                version = Version(version)
+                return realname, version
+            except InvalidVersion:
+                return name, None
         else:
-            improper[lexer.name] = (keywords, patterns)
-
-    print("Found new keywords for {} languages.".format(len(all_keywords)))
-    print(*all_keywords.keys(), sep='\n' if len(all_keywords) < 10 else ', ')
-    print("Couldn't extract keywords for {} languages".format(len(improper)))
-    for lexer, data in improper.items():
-        print(lexer, data[0], data[1], sep='\n\t')
-    return all_keywords, improper
+            return name, None
 
 
-process_pygments()
+if __name__ == '__main__':
+    import json
+    import difflib
+    c = coast_langs['Python']
+    s = json.dumps(c, indent=4).splitlines(keepends=True)
+    l = get_coast_lang_lexers('Python', c)
+    update_coast_def(c, l[0])
+    b = json.dumps(c, indent=4).splitlines(keepends=True)
+    print(*difflib.unified_diff(s, b))
+
+    # lexer_product = ((x, y) for i, x in enumerate(pygments_lexers)
+    #                  for y in pygments_lexers[i + 1:])
+    # versioned_lexers = list(
+    #     filter(lambda x: detect_versioned_langs(x[0].name, x[1].name),
+    #            lexer_product))
+    # print(versioned_lexers)
