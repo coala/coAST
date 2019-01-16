@@ -114,5 +114,5 @@ The website templates and assets included in this repository are released
 under the Creative Commons Share-alike license 4.0.
 https://creativecommons.org/licenses/by-sa/4.0/
 
-Any code in this repository is to be released under the MIT license.
+Any code in this repository is to be release under the MIT license.
 https://opensource.org/licenses/MIT
