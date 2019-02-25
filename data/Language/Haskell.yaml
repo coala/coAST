@@ -1,0 +1,63 @@
+identifier: Haskell
+full_name: Haskell
+aliases:
+  - hs
+extensions:
+  - hs
+line_continuation:
+  - backslash
+delimiters:
+  #comment delimeters
+  - double_dash
+  - double_dash dollar_sign
+
+  #block delimeters
+  - curly_braces
+
+  #misc delimeters
+  - square_braces
+  - round_braces
+  - double_colon #Cast as type
+  - dash_greater_than #arrow
+  - equals_greater_than #typeclass constraint
+  - backslash_underscore #lambda
+  keywords:
+    - as
+    - case
+    - class
+    - compare
+    - data
+    - default
+    - deriving
+    - do
+    - False
+    - forall
+    - foreign
+    - family
+    - hiding
+    - if
+    - import
+    - in
+    - infix
+    - infixl
+    - infixr
+    - instance
+    - let
+    - mdo
+    - module
+    - newtype
+    - Ord
+    - proc
+    - qualified
+    - rec
+    - read
+    - show
+    - type
+    - True
+    - where
+    datatypes:
+      - Int
+      - Float
+      - Double
+      - Bool
+      - Char
