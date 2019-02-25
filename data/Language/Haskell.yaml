@@ -10,21 +10,21 @@ extensions:
 line_continuation:
   - backslash
 delimiters:
-  #comment delimeters
+  # comment delimeters
   - double_dash
   - double_dash dollar_sign
 
-  #block delimeters
+  # block delimeters
   - curly_braces
 
-  #misc delimeters
+  # misc delimeters
   - square_braces
   - round_braces
-  - double_colon #Cast as type
-  - dash_greater_than #arrow
-  - equals_greater_than #typeclass constraint
-  - backslash_underscore #lambda
-keywords:
+  - double_colon # Cast as type
+  - dash_greater_than # arrow
+  - equals_greater_than # typeclass constraint
+  - backslash_underscore # lambda
+  keywords:
   - as
   - case
   - class
@@ -33,7 +33,7 @@ keywords:
   - default
   - deriving
   - do
-  - False
+  - else
   - forall
   - foreign
   - family
@@ -50,13 +50,12 @@ keywords:
   - module
   - newtype
   - Ord
+  - of
   - proc
   - qualified
   - rec
-  - read
-  - show
   - type
-  - True
+  - then
   - where
 datatypes:
   - Int
