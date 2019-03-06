@@ -1,5 +1,11 @@
-from collections import defaultdict
 import re
+
+
+class ParseException(Exception):
+    """Represents failed conversion"""
+
+    def __init__(self, keywords):
+        self.keywords = keywords  # partially parsed keywords
 
 
 def clean_pattern(pattern):
@@ -10,6 +16,7 @@ def clean_pattern(pattern):
         '\\b': '',
         '\\s+': ' ',
         '\\s*': '',
+        '\\S+': '',
         '\\*': '*',
         '\\-': '-',
         '\\.': '.',
@@ -21,6 +28,10 @@ def clean_pattern(pattern):
         '\\<': '<',
         '\\>': '>',
         '\\ ': ' ',
+        '\\)': ')',
+        '\\|': '|',
+        '\\[': '[',
+        '\\]': ']',
         '\\\\': '\\'
     }
     for orig, repl in REPLACEMENTS.items():
@@ -82,6 +93,9 @@ def get_subparts(re_pattern, depth=0):
     sub_parts_removed = []  # parts to be removed
     for index, sub_part in enumerate(sub_parts):
         if sub_part.startswith('[') and sub_part.endswith(']'):
+            if any(e in sub_part for e in ('a-z', 'A-Z', '0-9')):
+                sub_parts_removed.append(index)
+                continue
             prefix, middle, suffix = split_on_paren(sub_part[1:-1])
             parts = []
             if not prefix and not suffix:
@@ -115,7 +129,7 @@ def extract_keywords(re_pattern):
     for part in sub_parts:
         prefix, middle, suffix = split_on_paren(part)
         for keyword in extract_keywords(middle):
-            keywords.append(prefix + keyword + suffix)
+            keywords.append((prefix + keyword + suffix).strip())
     return keywords
 
 
@@ -128,7 +142,12 @@ def convert_to_keywords(lexer_patterns):
         except re.sre_compile.error:
             compiled = re.compile(re.escape(pattern))
         keywords = extract_keywords(clean_pattern(pattern))
-        if any(compiled.match(keyword) is None for keyword in keywords):
-            success = False
-        lexer_keywords.append(keywords)
-    return success, lexer_keywords
+        for keyword in keywords:
+            m = compiled.match(keyword)
+            if m is None or m.group() != keyword:
+                success = False
+                break
+        lexer_keywords.extend(keywords)
+    if not success:
+        raise ParseException(lexer_keywords)
+    return lexer_keywords
