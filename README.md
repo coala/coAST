@@ -95,7 +95,7 @@ languages.
 coala aspects development is driven by the needs of users, the complexity
 of bears, and pre-existing implementation choices of coala.
 
-For avoid these influences causing incorrect design decisions in coAST,
+For avoiding these influences causing incorrect design decisions in coAST,
 importing of aspects will not be considered until after style definitions
 are in place.
 
