@@ -10,7 +10,7 @@ import pygments
 from pygments.token import Token, Name
 from pygments.lexers import get_all_lexers, find_lexer_class_by_name
 
-from parser import convert_to_keywords, ParseException
+from parser import convert_to_keywords
 DEFAULT_MAPPING_TAG = yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG
 
 
@@ -134,15 +134,8 @@ def extract_lexer_data(lexer):
     patterns = get_lexer_patterns(lexer, REQUIRED_TOKEN_TYPES)
     keyword_patterns = patterns.get(Token.Keyword)
     if keyword_patterns:
-        try:
-            keywords = convert_to_keywords(keyword_patterns)
-        except ParseException as e:
-            print("Keyword parsing failed for", lexer.name)
-            print('Before parse:', keyword_patterns)
-            print('After parse :', e.keywords)
-            data['keywords'] = []
-        else:
-            data['keywords'] = list(sorted(set(keywords)))
+        keywords = convert_to_keywords(keyword_patterns)
+        data['keywords'] = list(sorted(set(keywords)))
 
     return data
 
