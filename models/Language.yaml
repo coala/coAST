@@ -13,6 +13,7 @@ versions: String
 grammar_file: String
 aliases: Alias[]
 extensions: FileExtension[]
+language_derivative: LangDerived[]
 line_continuation: LineCont[]
 delimiters: Delimiter[]
 datatypes: DataType[]
