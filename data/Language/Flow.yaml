@@ -1,0 +1,50 @@
+identifier: Flow
+full_name: Flow
+creation_date: 2014
+extensions:
+  - flow
+language_derivative:
+  - JavaScript
+line_continuation:
+  - backslash
+delimiters:
+  - double_slash
+  - multiline_slash_star
+  - single_quote_slash_escape
+  - double_quote_slash_escape
+  - curly_braces
+  - round_braces
+  - square_braces
+  - backticks
+  - curly_braces_pipe
+keywords:
+  - declare
+  - string
+  - boolean
+  - string
+  - number
+  - typeof
+  - return
+  - if
+  - let
+  - var
+  - function
+  - const
+  - object
+  - serialize
+  - interface
+  - implements
+  - array
+  - class
+  - new
+  - this
+  - constructor
+  - opaque
+  - type
+  - import
+datatypes:
+  - boolean_flow
+  - number_flow
+  - string_flow
+  - void_flow
+  - null_flow

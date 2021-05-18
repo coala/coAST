@@ -1,0 +1,4 @@
+keyword: string
+delimiters:
+  - single_quote
+  - double_quote
